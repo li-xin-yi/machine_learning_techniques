@@ -1,3 +1,4 @@
+%计算不同gamma值下的Eout
 N=length(features_train);
 temp=features_train;
 test=features_test;

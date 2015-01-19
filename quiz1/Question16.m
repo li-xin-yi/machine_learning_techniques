@@ -16,7 +16,7 @@ for i=[0,2,4,6,8]
         temp(n,1)=-1;
     end
    end
-   model=svmtrain(temp(:,1),temp(:,2:3),'-t 1 -d 2 -r 1 -c 0.01');
+   model=svmtrain(temp(:,1),temp(:,2:3),'-t 1 -d 2 -r 1 -c 0.01 -g 1');
    alpha(k,1)=i;
    alpha(k,2)=sum(abs(model.sv_coef));
    [predict,accuracy(k,1:3),value]=svmpredict(temp(:,1),temp(:,2:3),model);

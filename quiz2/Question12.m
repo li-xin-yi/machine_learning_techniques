@@ -41,8 +41,8 @@ end
    
  for T=1:300
      n=pos(T,1);
-     Gtestpred(T,:)=sign(s(n,1)*(test_set(:,1)'-theta(n,1)')+s(n,2)*(test_set(:,2)'-theta(n,1)'));
+     Gpredt(T,:)=sign(s(n,1)*(test_set(:,1)'-theta(n,1)')+s(n,2)*(test_set(:,2)'-theta(n,1)'));
    end
    
-   Gpredtest=sign(log(t)'*pred);
+   Gpredtest=sign(log(t)'*Gpredt);
    

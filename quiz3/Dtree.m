@@ -9,8 +9,8 @@ function r=Dtree(train,order)  %r1->s r2->theta r3->i r4->order
    theta1=0;
    theta2=0;
 for n=1:N-1
-    theta1(n,1)=train1(n+1,1)+train1(n,1);
-    theta2(n,1)=train2(n+1,2)+train2(n,2);
+    theta1(n,1)=(train1(n+1,1)+train1(n,1))/2;
+    theta2(n,1)=(train2(n+1,2)+train2(n,2))/2;
 end
  for n=1:N-1
      imp1(n,1)=impurity(train1(1:n,3));imp1(n,2)=impurity(train1(n+1:N,3));

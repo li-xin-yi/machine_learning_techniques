@@ -1,0 +1,67 @@
+\documentclass[a4paper,10pt]{exam}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
+\title{QUIZ1}
+\date{}
+\author{}
+\printanswers
+
+\begin{document}
+	\maketitle
+\begin{questions}
+	 \question Recall that $N$ is the size of the data set and $d$ is the dimensionality of the input space. The primal formulation of the linear soft-margin support vector machine problem, without going through the Lagrangian dual problem, is
+	 \begin{choices}
+	 	\choice a quadratic programming problem with $N$ variables
+	 	\choice a quadratic programming problem with $d+1$ variables
+	 	\choice none of the other choices
+	 	\choice a quadratic programming problem with $2N$ variables
+	 	\CorrectChoice a quadratic programming problem with $N+d+1$ variables\\
+	 \end{choices}
+	 
+	 \question Consider the following training data set:
+	 \[\mathbf{x}_1 = (1, 0), y_1 = -1 \quad \quad \mathbf{x}_2 = (0, 1), y_2 = -1 \quad \quad \mathbf{x}_3 = (0,-1), y_3=-1\]
+	 \[\mathbf{x}_4 = (-1, 0), y_4 = +1 \quad \quad \mathbf{x}_5 = (0, 2), y_5 = +1 \quad \quad \mathbf{x}_6 = (0,-2), y_6=+1\]
+	 \[\mathbf{x}_7 = (-2, 0), y_7 = +1\]
+	 Use following nonlinear transformation of the input vector $\mathbf{x} = (x_1, x_2)$ to the transformed vector $\mathbf{z} = (\phi_1(\mathbf{x}), \phi_2(\mathbf{x}))$:
+	 \[\phi_1(\mathbf{x}) = x_2^2 - 2x_1 + 3 \quad \quad \phi_2(\mathbf{x}) = x_1^2 - 2 x_2 - 3\]
+	 What is the equation of the optimal separating ``hyperplane'' in the $\mathcal{Z}$ space?
+	 \begin{choices}
+	 	\choice $z_1 + z_2 = 4.5$
+	 	\choice $z_1 - z_2 = 4.5$
+	 	\CorrectChoice $z_1 = 4.5$
+	 	\choice $z_2 = 4.5$
+	 	\choice none of the other choices\\
+	 \end{choices}
+	 
+	 \question Consider the same training data set as Question 2, but instead of explicitly transforming the input space $\mathcal{X}$ to $\mathcal{Z}$, apply the hard-margin support vector machine algorithm with the kernel function
+	 \[K(\mathbf{x}, \mathbf{x}') = (1 + \mathbf{x}^T \mathbf{x}')^2,\]
+	 which corresponds to a second-order polynomial transformation. Set up the optimization problem using $(\alpha_1, \cdots, \alpha_7)$ and numerically solve for them (you can use any package you want). Which of the followings are true about the optimal ${\boldsymbol\alpha}$?
+	 \begin{choices}
+	 	\CorrectChoice $\sum_{n=1}^7 \alpha_n \approx 2.8148$
+	 	\CorrectChoice $\min_{1 \le n \le 7} \alpha_n = \alpha_7$
+	 	\choice there are 6 nonzero $\alpha_n$
+	 	\choice none of the other choices
+	 	\choice $\max_{1 \le n \le 7} \alpha_n = \alpha_7$\\
+	 \end{choices}
+	 
+	 \question Following Question 3, what is the corresponding nonlinear curve in the $\mathcal{X}$ space?
+	 \begin{choices}
+	 	\CorrectChoice $\frac{1}{9}(8x_1^2-16x_1+6x_2^2 - 15) = 0$
+	 	\choice none of the other choices
+	 	\choice $\frac{1}{9}(8x_2^2-16x_2+6x_1^2 + 15) = 0$
+	 	\choice $\frac{1}{9}(8x_2^2-16x_2+6x_1^2 - 15) = 0$
+	 	\choice $\frac{1}{9}(8x_1^2-16x_1+6x_2^2 + 15) = 0$\\
+	 \end{choices}
+	 
+	\question Compare the two nonlinear curves found in Questions 2 and 4, which of the following is true?
+	\begin{choices}
+		\choice none of the other choices
+		\choice The curves should be the same in the $\mathcal{X}$ space, because they are learned with respect to the same $\mathcal{Z}$ space
+		\CorrectChoice The curves should be different in the $\mathcal{X}$ space, because they are learned with respect to different $\mathcal{Z}$ spaces
+		\choice The curves should be different in the $\mathcal{X}$ space, because they are learned from different raw data $\{(\mathbf{x}_n, y_n)\}$
+		\choice The curves should be the same in the $\mathcal{X}$ space, because they are learned from the same raw data $\{(\mathbf{x}_n, y_n)\}$\\
+	\end{choices}
+
+\end{questions}
+\end{document}

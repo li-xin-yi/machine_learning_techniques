@@ -11,7 +11,7 @@ function re=knn_predict_check(train,test,k)
        s=0;
        dis=sortrows(distance,1);
        for n=1:k
-          s=s+train(dis(n,2),10)*exp(-dis(n,1)^2);
+          s=s+train(dis(n,2),10);
        end        
        predict(i,1)=sign(s);
    end

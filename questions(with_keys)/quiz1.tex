@@ -62,6 +62,28 @@
 		\choice The curves should be different in the $\mathcal{X}$ space, because they are learned from different raw data $\{(\mathbf{x}_n, y_n)\}$
 		\choice The curves should be the same in the $\mathcal{X}$ space, because they are learned from the same raw data $\{(\mathbf{x}_n, y_n)\}$\\
 	\end{choices}
+	
+	\question Recall that for support vector machines, $d_{vc}$ is upper bounded by $\frac{R^2}{\rho^2}$, where $\rho$ is the margin and $R$ is the radius of the minimum hypersphere that $\mathcal{X}$ resides in. In general, $R$ should come from our knowledge on the learning problem, but we can estimate it by looking at the minimum hypersphere that the training examples resides in. In particular, we want to seek for the optimal $R$ that solves \[(P) \; \; \; \min_{R \in \mathbb{R}, \mathbf{c} \in \mathbb{R}^d} \; \; \; R^2 \; \; \; \mbox{subject to } \|\mathbf{x}_n - \mathbf{c}\|^2 \le R^2 \mbox{ for } n = 1, 2, \cdots, N.\]
+	Let $\lambda_n$ be the Lagrange multipliers for the n-th constraint above. Following the derivation of the dual support vector machine in class, write down $(P)$ as an equivalent optimization problem \[\min_{R \in \mathbb{R}, \mathbf{c} \in \mathbb{R}^d} \;\;\; \max_{\lambda_n \ge 0} \;\;\; L(R, \mathbf{c}, {\boldsymbol\lambda}).\] What is $L(R, \mathbf{c}, {\boldsymbol\lambda})?$
+	
+	\begin{choices}
+		\CorrectChoice $R^2 + \sum_{n=1}^N \lambda_n( \|\mathbf{x}_n - \mathbf{c}\|^2 - R^2)$
+		\choice $R^2 - \sum_{n=1}^N \lambda_n( \|\mathbf{x}_n - \mathbf{c}\|^2 - R^2)$
+		\choice $R^2 + \sum_{n=1}^N \lambda_n( \|\mathbf{x}_n - \mathbf{c}\|^2 + R^2)$
+		\choice $R^2 - \sum_{n=1}^N \lambda_n( \|\mathbf{x}_n - \mathbf{c}\|^2 + R^2)$
+		\choice none of the other choices\\
+	\end{choices}
+	
+	\question Using (assuming) strong duality, the solution to $(P)$ in Question 6 would be the same as the Lagrange dual problem
+	\[(D) \; \; \; \max_{\lambda_n \ge 0} \;\;\; \min_{R \in \mathbb{R}, \mathbf{c} \in \mathbb{R}^d}  \;\;\;  L(R, \mathbf{c}, {\boldsymbol\lambda}).\]
+	Which of the following can be derived from the KKT conditions of $(P)$ and $(D)$ at the optimal $(R, \mathbf{c}, {\boldsymbol\lambda})$?
+	\begin{choices}
+		\CorrectChoice if $\sum_{n=1}^N \lambda_n \neq 0$, then $\mathbf{c} = \left(\sum_{n=1}^N \lambda_n \mathbf{x}_n\right) \Big/ \left(\sum_{n=1}^N \lambda_n\right)$
+		\choice if $\lambda_n = 0$, then $\|\mathbf{x}_n - \mathbf{c}\|^2 - R^2 = 0$
+		\CorrectChoice if $R \neq 0$, then $R \neq 0$
+		\choice none of the other choices
+		\choice if $\|\mathbf{x}_n - \mathbf{c}\|^2 - R^2 < 0$, then $\lambda_n = 0$\\
+   \end{choices}
 
 \end{questions}
 \end{document}

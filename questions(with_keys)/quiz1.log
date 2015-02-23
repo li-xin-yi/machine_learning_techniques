@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  22 FEB 2015 17:42
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  23 FEB 2015 23:42
 entering extended mode
 **quiz1.tex
 
@@ -447,23 +447,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
 [2]
-This exam contains 5 questions with 0 parts, 0 subparts, and 0 subsubparts.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+This exam contains 7 questions with 0 parts, 0 subparts, and 0 subsubparts.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
 
 (C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
 )\quiz1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 67.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 89.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 89.
  ) 
 Here is how much of TeX's memory you used:
- 7336 strings out of 430478
- 98152 string characters out of 3191502
- 192233 words of memory out of 3000000
- 10438 multiletter control sequences out of 15000+200000
+ 7357 strings out of 430478
+ 98511 string characters out of 3191502
+ 192319 words of memory out of 3000000
+ 10459 multiletter control sequences out of 15000+200000
  13040 words of font info for 50 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,10n,22p,302b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,10n,22p,678b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on quiz1.pdf (2 pages).

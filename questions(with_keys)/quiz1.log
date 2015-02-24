@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  23 FEB 2015 23:42
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  24 FEB 2015 23:23
 entering extended mode
 **quiz1.tex
 
@@ -160,6 +160,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
+(D:\CTEX\MiKTeX\tex\latex\base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
 (D:\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty
 Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
 
@@ -287,24 +293,119 @@ tly
 )
 \Hy@SectionHShift=\skip68
 )
+(D:\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+
+! LaTeX Error: Command \lhead already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 ...lhead}{\@ifnextchar[{\@xlhead}{\@ylhead}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \chead already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.270 ...chead}{\@ifnextchar[{\@xchead}{\@ychead}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \rhead already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 ...rhead}{\@ifnextchar[{\@xrhead}{\@yrhead}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \lfoot already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.278 ...lfoot}{\@ifnextchar[{\@xlfoot}{\@ylfoot}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \cfoot already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.282 ...cfoot}{\@ifnextchar[{\@xcfoot}{\@ycfoot}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \rfoot already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.286 ...rfoot}{\@ifnextchar[{\@xrfoot}{\@yrfoot}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\fancy@headwidth=\skip69
+\f@ncyO@elh=\skip70
+\f@ncyO@erh=\skip71
+\f@ncyO@olh=\skip72
+\f@ncyO@orh=\skip73
+\f@ncyO@elf=\skip74
+\f@ncyO@erf=\skip75
+\f@ncyO@olf=\skip76
+\f@ncyO@orf=\skip77
+)
 (C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
 )\quiz1.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 \AtBeginShipoutBox=\box29
  (D:\CTEX\MiKTeX\tex\latex\graphics\color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
@@ -318,7 +419,7 @@ Package color Info: Driver file: xetex.def on input line 130.
 File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
 
 ))
-Package hyperref Info: Link coloring ON on input line 10.
+Package hyperref Info: Link coloring ON on input line 12.
 
 (D:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -328,9 +429,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count147
 )
-LaTeX Info: Redefining \ref on input line 10.
-LaTeX Info: Redefining \pageref on input line 10.
-LaTeX Info: Redefining \nameref on input line 10.
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
 
 (C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
 )\quiz1.out)
@@ -363,7 +464,7 @@ Requested font "cmex8" at 8.0pt
  -> cmex8
 Requested font "cmex7" at 6.0pt
  -> cmex7
-LaTeX Font Info:    Try loading font information for U+msa on input line 12.
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
  (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
@@ -373,7 +474,7 @@ Requested font "msam10" at 8.0pt
  -> msam10
 Requested font "msam7" at 6.0pt
  -> msam7
-LaTeX Font Info:    Try loading font information for U+msb on input line 12.
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 
 (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -384,6 +485,17 @@ Requested font "msbm10" at 8.0pt
  -> msbm10
 Requested font "msbm7" at 6.0pt
  -> msbm7
+LaTeX Font Info:    Try loading font information for U+lasy on input line 18.
+
+(D:\CTEX\MiKTeX\tex\latex\base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Requested font "lasy10" at 12.0pt
+ -> lasy10
+Requested font "lasy8" at 8.0pt
+ -> lasy8
+Requested font "lasy6" at 6.0pt
+ -> lasy6
 Requested font "cmex7" at 7.0pt
  -> cmex7
 Requested font "cmex7" at 5.0pt
@@ -400,19 +512,25 @@ Requested font "msbm7" at 7.0pt
  -> msbm7
 Requested font "msbm5" at 5.0pt
  -> msbm5
-Requested font "cmbx10" at 10.0pt
- -> cmbx10
+Requested font "lasy10" at 10.0pt
+ -> lasy10
+Requested font "lasy7" at 7.0pt
+ -> lasy7
+Requested font "lasy5" at 5.0pt
+ -> lasy5
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
+Requested font "cmbx10" at 10.0pt
+ -> cmbx10
 Requested font "cmbx7" at 7.0pt
  -> cmbx7
 Requested font "cmbx5" at 5.0pt
  -> cmbx5
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
@@ -428,13 +546,19 @@ Requested font "cmbsy7" at 7.0pt
  -> cmbsy7
 Requested font "cmbsy5" at 5.0pt
  -> cmbsy5
+Requested font "lasyb10" at 10.0pt
+ -> lasyb10
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 45.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 45.
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
@@ -443,37 +567,127 @@ File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
 ) [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 [2]
-This exam contains 7 questions with 0 parts, 0 subparts, and 0 subsubparts.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+Missing character: There is no ′ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+Missing character: There is no ′ in font cmr10!
+
+Overfull \hbox (50.70438pt too wide) in paragraph at lines 118--119
+[]\OT1/cmr/m/n/10 Pick some $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 with $\OML/cmm
+/m/it/10 ^^U[] > \OT1/cmr/m/n/10 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = 
+[]$ 
+ []
+
+
+Overfull \hbox (50.70438pt too wide) in paragraph at lines 120--121
+[]\OT1/cmr/m/n/10 Pick some $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 with $\OML/cmm
+/m/it/10 ^^U[] \OT1/cmr/m/n/10 = 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = 
+[]$ 
+ []
+
+
+Overfull \hbox (50.70438pt too wide) in paragraph at lines 121--122
+[]\OT1/cmr/m/n/10 Pick some $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 with $\OML/cmm
+/m/it/10 ^^U[] \OT1/cmr/m/n/10 = 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = 
+[]$ 
+ []
+
+
+Overfull \hbox (50.70438pt too wide) in paragraph at lines 122--123
+[]\OT1/cmr/m/n/10 Pick some $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 with $\OML/cmm
+/m/it/10 ^^U[] > \OT1/cmr/m/n/10 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = 
+[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
+[6]
+This exam contains 20 questions with 0 parts, 0 subparts, and 0 subsubparts.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
 
 (C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
 )\quiz1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 89.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 89.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 266.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 266.
  ) 
 Here is how much of TeX's memory you used:
- 7357 strings out of 430478
- 98511 string characters out of 3191502
- 192319 words of memory out of 3000000
- 10459 multiletter control sequences out of 15000+200000
- 13040 words of font info for 50 fonts, out of 3000000 for 9000
+ 7627 strings out of 430478
+ 102508 string characters out of 3191502
+ 194745 words of memory out of 3000000
+ 10714 multiletter control sequences out of 15000+200000
+ 13782 words of font info for 57 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,10n,22p,678b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,12n,43p,678b,536s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on quiz1.pdf (2 pages).
+Output written on quiz1.pdf (6 pages).

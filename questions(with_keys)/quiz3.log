@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  25 FEB 2015 22:09
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  26 FEB 2015 18:55
 entering extended mode
 **quiz3.tex
 
@@ -345,27 +345,41 @@ Requested font "msbm7" at 7.0pt
 Requested font "msbm5" at 5.0pt
  -> msbm5
 
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
 (D:\CTEX\MiKTeX\tex\generic\oberdiek\se-ascii-print.def
 File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
 ) [1
 
 ]
-This exam contains 1 questions with 0 parts, 0 subparts, and 0 subsubparts.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
+This exam contains 3 questions with 0 parts, 0 subparts, and 0 subsubparts.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
 
 (C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
 )\quiz3.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 21.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 21.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 41.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 6711 strings out of 430478
- 91265 string characters out of 3191502
- 172661 words of memory out of 3000000
- 9836 multiletter control sequences out of 15000+200000
+ 6732 strings out of 430478
+ 91624 string characters out of 3191502
+ 178743 words of memory out of 3000000
+ 9857 multiletter control sequences out of 15000+200000
  10591 words of font info for 42 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,5n,22p,338b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,5n,22p,511b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on quiz3.pdf (1 page).

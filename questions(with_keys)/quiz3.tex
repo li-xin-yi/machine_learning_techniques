@@ -15,7 +15,27 @@
 		\choice 0.75
 		\choice 0.25
 		\choice 0
-		\choice 1
+		\choice 1\\
+		\end{choices}
+		
+		\question Following Question 1, there are four possible impurity functions below. We can normalize each impurity function by dividing it with its maximum value among all $\mu_+ \in [0, 1]$ For instance, the classification error is simply $\min(\mu_+, \mu_-)$ and its maximum value is 0.5. So the normalized classification error is $2 \min(\mu_+, \mu_-)$. After normalization, which of the following impurity function is equivalent to the normalized Gini index?
+		
+		\begin{choices}
+		  \CorrectChoice the squared regression error (used for branching in classification data sets), which is by definition $\mu_+ (1 - (\mu_+ - \mu_-))^2 + \mu_- (-1 - (\mu_+ - \mu_-))^2$.
+		  \choice the entropy, which is $-\mu_+ \ln \mu_+ - \mu_- \ln \mu_-$, with $0 \log 0 \equiv 0$.
+		  \choice the closeness, which is $1 - |\mu_+ - \mu_-|$.
+		  \choice the classification error $\min(\mu_+, \mu_-)$.
+		  \choice none of the other choices\\
+		\end{choices}
+		
+		\question \textbf{Random Forest}\\
+		If bootstrapping is used to sample $N' = pN$ examples out of $N$ examples and $N$ is very large. Approximately how many of the $N$ examples will not be sampled at all?
+		\begin{choices}
+			\choice $(1 - e^{-1/p}) \cdot N$
+			\choice $(1 - e^{-p}) \cdot N$
+			\choice $e^{-1} \cdot N$
+			\choice $e^{-1/p} \cdot N$
+			\CorrectChoice $e^{-p} \cdot N$\\
 		\end{choices}
 	\end{questions}
 \end{document}

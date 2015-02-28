@@ -85,8 +85,38 @@
 			\CorrectChoice $\sum_{n=1}^N y_n g_t(\mathbf{x}_n)$
 			\choice $\sum_{n=1}^N y_n^2$
 			\choice $\sum_{n=1}^N y_n s_n$
-			\choice 0
-			
+			\choice 0	\\
+	    \end{choices}
+	    
+	    \question \textbf{Neural Network}\\
+	    Consider Neural Network with $\mbox{sign}(s)$ instead of $\tanh(s)$ as the transformation functions. That is, consider Multi-Layer Perceptrons. In addition, we will take $+1$ to mean logic TRUE, and ${{ - }}1$ to mean logic FALSE. Assume that all $x_i$ below are either $+1$ or ${{ - }}1$. Which of the following perceptron
+	    \[g_A(\mathbf{x}) = \mbox{sign}\left(\sum_{i=0}^d w_i x_i\right).\]
+	    implements
+	    \[\text{OR}\left(x_1,x_2,\ldots,x_d\right).\]
+	    \begin{choices}
+	    	\CorrectChoice $(w_0, w_1, w_2, \cdots, w_d) = (d-1, +1, +1, \cdots, +1)$
+	    	\choice $(w_0, w_1, w_2, \cdots, w_d) = (-d+1, -1, -1, \cdots, -1)$
+	    	\choice none of the other choices
+	    	\choice $(w_0, w_1, w_2, \cdots, w_d) = (d-1, -1, -1, \cdots, -1)$
+	    	\choice $(w_0, w_1, w_2, \cdots, w_d) = (-d+1, +1, +1, \cdots, +1)$\\
+	    \end{choices}
+	    
+	    \question Continuing from Question 9, among the following choices of $D$, which $D$ is the smallest for some $5$-$D$-$1$ Neural Network to implement $\text{XOR}\bigl(x_1,x_2,x_3,x_4, x_5\bigr)$?
+	    \begin{choices}
+	    	\choice 1
+	    	\choice 9
+	    	\choice 7
+	    	\CorrectChoice 5
+	    	\choice 3\\
+	    \end{choices}
+	    
+	    \question For a Neural Network with at least one hidden layer and $\tanh(s)$ as the transformation functions on all neurons (including the output neuron), what is true about the gradient components (with respect to the weights) when all the initial weights $w_{ij}^{(\ell)}$ are set to $0$?
+	    \begin{choices}
+	    	\choice all the gradient components are zero
+	    	\choice only the gradient components with respect to $w_{0j}^{(\ell)}$ for $j > 0$ may non-zero, all other gradient components must be zero
+	    	\choice none of the other choices
+	    	\choice only the gradient components with respect to $w_{j1}^{(L)}$ for $j>0$ may be non-zero, all other gradient components must be zero
+	    	\CorrectChoice only the gradient components with respect to $w_{01}^{(L)}$ may be non-zero, all other gradient components must be zero \\
 	    \end{choices}
 	\end{questions}
 \end{document}

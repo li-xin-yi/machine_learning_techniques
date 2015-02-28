@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  26 FEB 2015 21:43
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  27 FEB 2015 18:01
 entering extended mode
 **quiz3.tex
 
@@ -468,23 +468,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
 [2]
-This exam contains 8 questions with 0 parts, 0 subparts, and 0 subsubparts.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+[3]
+This exam contains 11 questions with 0 parts, 0 subparts, and 0 subsubparts.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
 
 (C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
 )\quiz3.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 92.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 92.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 122.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 122.
  ) 
 Here is how much of TeX's memory you used:
- 7380 strings out of 430478
- 98985 string characters out of 3191502
- 192326 words of memory out of 3000000
- 10477 multiletter control sequences out of 15000+200000
+ 7411 strings out of 430478
+ 99529 string characters out of 3191502
+ 192476 words of memory out of 3000000
+ 10508 multiletter control sequences out of 15000+200000
  11846 words of font info for 50 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,10n,23p,511b,466s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,10n,23p,511b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on quiz3.pdf (2 pages).
+Output written on quiz3.pdf (3 pages).

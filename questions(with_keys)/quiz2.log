@@ -1,7 +1,9 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  29 JAN 2015 20:25
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  1 MAR 2015 17:08
 entering extended mode
 **quiz2.tex
-(E:\coursera\机器学习技法\作业\quiz2.tex
+
+(C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
+)\quiz2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (D:\CTEX\MiKTeX\tex\latex\exam\exam.cls
@@ -321,7 +323,9 @@ or  <return>  to continue without it.
 \f@ncyO@erf=\skip72
 \f@ncyO@olf=\skip73
 \f@ncyO@orf=\skip74
-) (E:\coursera\机器学习技法\作业\quiz2.aux)
+)
+(C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
+)\quiz2.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
@@ -339,8 +343,7 @@ LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 \AtBeginShipoutBox=\box27
-
-(D:\CTEX\MiKTeX\tex\latex\graphics\color.sty
+ (D:\CTEX\MiKTeX\tex\latex\graphics\color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (D:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
@@ -366,8 +369,10 @@ LaTeX Info: Redefining \ref on input line 13.
 LaTeX Info: Redefining \pageref on input line 13.
 LaTeX Info: Redefining \nameref on input line 13.
 
-(E:\coursera\机器学习技法\作业\quiz2.out)
-(E:\coursera\机器学习技法\作业\quiz2.out)
+(C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
+)\quiz2.out)
+(C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
+)\quiz2.out)
 \@outlinefile=\write3
 Requested font "cmr17" at 17.28pt
  -> cmr17
@@ -396,8 +401,7 @@ Requested font "cmex8" at 8.0pt
 Requested font "cmex7" at 6.0pt
  -> cmex7
 LaTeX Font Info:    Try loading font information for U+msa on input line 15.
-
-(D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+ (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 Requested font "msam10" at 12.0pt
@@ -555,19 +559,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--250
 This exam contains 20 questions with 0 parts, 0 subparts, and 0 subsubparts.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
-(E:\coursera\机器学习技法\作业\quiz2.aux)
+
+(C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
+)\quiz2.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 267.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 267.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 7016 strings out of 430478
- 95589 string characters out of 3191502
- 189303 words of memory out of 3000000
- 10136 multiletter control sequences out of 15000+200000
+ 7017 strings out of 430478
+ 95887 string characters out of 3191502
+ 189327 words of memory out of 3000000
+ 10137 multiletter control sequences out of 15000+200000
  11210 words of font info for 44 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  29i,12n,43p,828b,537s stack positions out of 5000i,500n,10000p,200000b,50000s

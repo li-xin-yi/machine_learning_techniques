@@ -3,11 +3,16 @@
 \usepackage{amsmath}
 \usepackage{latexsym}
 \usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
+\usepackage{fancyhdr}
+\lhead{}
+\chead{Homework of Meachine Learning Techniques: Quiz3}
+\rhead{}
 \title{QUIZ3}
 \date{}
 \author{}
-\printanswers
+%\printanswers
 \begin{document}
+	\pagestyle{fancy}
 	\maketitle
 	\begin{questions}
 		\question \textbf{Decision Tree}\\Impurity functions play an important role in decision tree branching. For binary classification problems, let $\mu_+$ be the fraction of positive examples in a data subset, and $\mu_- = 1 - \mu_+$ be the fraction of negative examples in the data subset.
@@ -118,5 +123,94 @@
 	    	\choice only the gradient components with respect to $w_{j1}^{(L)}$ for $j>0$ may be non-zero, all other gradient components must be zero
 	    	\CorrectChoice only the gradient components with respect to $w_{01}^{(L)}$ may be non-zero, all other gradient components must be zero \\
 	    \end{choices}
+	    
+	    \question For a Neural Network with one hidden layer and $\tanh(s)$ as the transformation functions on all neurons (including the output neuron), what is always true about the backprop algorithm when all the initial weights $w_{ij}^{(\ell)}$ are set to $1$?
+	    \begin{choices}
+	    	\choice none of the other choices
+	    	\CorrectChoice $w_{ij}^{(1)} = w_{i(j+1)}^{(1)}$ for all $i$ and $1 \le j{\rm{  < }}{d^{(1)}} - 1$
+	    	\choice all $w_{j1}^{(2)}$ for $j>0$ are different
+	    	\choice $w_{ij}^{(1)} = w_{(i+1)j}^{(1)}$ for $1 \le i{\rm{  < }}{d^{(0)}} - 1$ and all $j$
+	    	\choice the gradient components with respect to all $w_{ij}^{(\ell)}$ are zero\\
+	    \end{choices}
+	    
+	    \question \textbf{Experiments with Decision Tree}\\
+	    Implement the simple C\&RT algorithm without pruning using the Gini index as the impurity measure as introduced in the class. For the decision stump used in branching, if you are branching with feature $i$ and direction $s$, please sort all the $x_{n, i}$ values to form (at most) $N+1$ segments of equivalent $\theta$, and then pick $\theta$ within the median of the segment. Run the algorithm on the following set for training:\\
+	    \href{https://d396qusza40orc.cloudfront.net/ntumltwo/hw3_data/hw3_train.dat}{hw3\_train.dat}\\
+	    and the following set for testing:\\
+	    \href{https://d396qusza40orc.cloudfront.net/ntumltwo/hw3_data/hw3_test.dat}{hw3\_test.dat}\\
+	    How many internal nodes (branching functions) are there in the resulting tree $G$?
+	    \begin{choices}
+	    	\choice 12
+	    	\choice 8
+	    	\choice 14
+	    	\CorrectChoice 10
+	    	\choice 6\\
+	    \end{choices}
+	    
+	    \question Continuing from Question 13, which of the following is closest to the $E_{\text{in}}$ (evaluated with 0/1 error) of the tree?
+	    \begin{choices}
+	    	\CorrectChoice 0.0
+	    	\choice 0.1
+	    	\choice 0.2
+	    	\choice 0.3
+	    	\choice 0.4\\
+	    \end{choices}
+	    
+	    \question Continuing from Question 13, which of the following is closest to the $E_{\text{out}}$ (evaluated with 0/1 error) of the tree?
+	    \begin{choices}
+	    \choice 0.05
+	    \choice 0.25
+	    \choice 0.35
+	    \choice 0.00
+	    \CorrectChoice 0.15\\
+	    \end{choices}
+	    
+	    \question Now implement the Bagging algorithm with $N' = N$ and couple it with your decision tree above to make a preliminary random forest $G_{RS}$. Produce $T=300$ trees with bagging. Repeat the experiment for 100 times and compute average $E_{\text{in}}$ and $E_{\text{out}}$ using the 0/1 error.
+	    Which of the following is true about the average $E_{\text{in}}(g_t)$ for all the 30000 trees that you have generated?
+	    \begin{choices}
+	    	\CorrectChoice $0.03 \leq \mbox{average } E_{\text{in}}(g_t) <0.06$
+	    	\choice $0.00 \leq \mbox{average } E_{\text{in}}(g_t) < 0.03$
+	    	\choice $0.09 \leq \mbox{average } E_{\text{in}}(g_t) < 0.12$
+	    	\choice $0.06 \leq \mbox{average } E_{\text{in}}(g_t) < 0.09$
+	    	\choice $0.12 \leq \mbox{average } E_{\text{in}}(g_t) < 0.50$\\
+	    \end{choices}
+	    
+	    \question Continuing from Question 16, which of the following is true about the average $E_{\text{in}}(G_{RF})$?
+	    \begin{choices}
+	    	\choice $0.06 \leq \mbox{average } E_{\text{in}}(G_{RF}) < 0.09$
+	    	\choice $0.09 \leq \mbox{average } E_{\text{in}}(G_{RF}) < 0.12$
+	    	\choice $0.12 \leq \mbox{average } E_{\text{in}}(G_{RF}) < 0.50$
+	    	\CorrectChoice $0.12 \leq \mbox{average } E_{\text{in}}(G_{RF}) < 0.50$
+	    	\choice $0.03 \leq \mbox{average } E_{\text{in}}(G_{RF}) < 0.06$\\
+	    \end{choices}
+	    
+	    \question Continuing from Question 16, which of the following is true about the average $E_{\text{out}}(G_{RF})$?
+	    \begin{choices}
+	    	\CorrectChoice $0.06 \leq \mbox{average } E_{\text{out}}(G_{RF}) < 0.09$
+	    	\choice $0.09 \leq \mbox{average } E_{\text{out}}(G_{RF}) < 0.12$
+	    	\choice $0.03 \leq \mbox{average } E_{\text{out}}(G_{RF}) < 0.06$
+	    	\choice $0.00 \leq \mbox{average } E_{\text{out}}(G_{RF}) < 0.03$
+	    	\choice $0.12 \leq \mbox{average } E_{\text{out}}(G_{RF}) < 0.50$\\
+	    \end{choices}
+	    
+	    \question Now, `prune' your decision tree algorithm by restricting it to have one branch only. That is, the tree is simply a decision stump determined by Gini index. Make a random `forest' $G_{RS}$ with those decision stumps with Bagging like Questions 16-18 with $T=300$. Repeat the experiment for 100 times and compute average $E_{\text{in}}$ and $E_{\text{out}}$ using the 0/1 error.
+	    Which of the following is true about the average $E_{\text{in}}(G_{RS})$?
+	    
+	    \begin{choices}
+	    	\CorrectChoice $0.09 \leq \mbox{average } E_{\text{in}}(G_{RS}) < 0.12$
+	    	\choice $0.03 \leq \mbox{average } E_{\text{in}}(G_{RS}) < 0.06$
+	    	\choice $0.00 \leq \mbox{average } E_{\text{in}}(G_{RS}) < 0.03$
+	    	\choice $0.12 \leq \mbox{average } E_{\text{in}}(G_{RS}) < 0.50$
+	    	\choice $0.06 \leq \mbox{average } E_{\text{in}}(G_{RS}) < 0.09$\\
+	    \end{choices}
+	    
+	    \question Continuing from Question 19, which of the following is true about the average $E_{\text{out}}(G_{RS})$?
+	    \begin{choices}
+	      \choice $0.06 \leq \mbox{average } E_{\text{out}}(G_{RS}) < 0.09$
+	      \choice $0.09 \leq \mbox{average } E_{\text{out}}(G_{RS}) < 0.12$
+	      \choice $0.03 \leq \mbox{average } E_{\text{out}}(G_{RS}) < 0.06$
+	      \choice $0.00 \leq \mbox{average } E_{\text{out}}(G_{RS}) < 0.03$
+	      \CorrectChoice $0.12 \leq \mbox{average } E_{\text{out}}(G_{RS}) < 0.50$\\
+	   \end{choices}
 	\end{questions}
 \end{document}

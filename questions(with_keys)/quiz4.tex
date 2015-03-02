@@ -1,0 +1,41 @@
+\documentclass[a4paper,10pt]{exam}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
+\title{QUIZ4}
+\date{}
+\author{}
+\printanswers
+\begin{document}
+	\maketitle
+	\begin{questions}
+		\question \textbf{Neural Network and Deep Learning}\\
+		A fully connected Neural Network has $L=2; \, d^{(0)}=5, \, d^{(1)}=3, \, d^{(2)}=1$. If only products of the form $w_{ij}^{(\ell)} x_i^{(\ell-1)}$, $w_{ij}^{(\ell+1)} \delta_j^{(\ell+1)}$, and $x_i^{(\ell-1)} \delta_j^{(\ell)}$ count as operations (even for $x_0^{(\ell-1)}=1$), without counting anything else, which of the following is the total number of operations required in a single iteration of backpropagation (using SGD on one data point)?
+		\begin{choices}
+			\CorrectChoice 47
+			\choice 43
+			\choice 53
+			\choice 59
+			\choice none of the other choices\\
+		\end{choices}
+		
+		\question Consider a Neural Network without any bias terms $x_{0}^{(\ell)}$. Assume that the network contains $d^{(0)}=10$ input units, 1 output unit, and 36 hidden units. The hidden units can be arranged in any number of layers $\ell=1,\cdots,L-1$, and each layer is fully connected to the layer above it. What is the minimum possible number of weights that such a network can have?
+		\begin{choices}
+			\CorrectChoice 46
+			\choice 44
+			\choice none of the other choices
+			\choice 43
+			\choice 45\\
+		\end{choices}
+		
+		\question Following Question 2, what is the maximum possible number of weights that such a network can have?
+		\begin{choices}
+			\choice 510
+			\choice 520
+			\choice none of the other choices
+			\choice 500
+			\choice 490\\
+		\end{choices}
+	\end{questions}
+\end{document}

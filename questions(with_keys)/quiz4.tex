@@ -57,15 +57,15 @@
 			\choice $2 (\mathbf{x}_n^T \mathbf{w})^2 \mathbf{x}_n + 2 (\mathbf{x}_n^T \mathbf{w}) (\mathbf{w}^T \mathbf{w}) \mathbf{w} - 4 (\mathbf{x}_n^T \mathbf{w}) \mathbf{w}$\\
 		\end{choices}
 		
-		\question Following Question 4, assume that noise vectors ${\boldsymbol\epsilon}_n$ are generated i.i.d. from a zero-mean, unit var iance Gaussian distribution and added to $\mathbf{x}_n$ to make $\tilde{\mathbf{x}}_n = \mathbf{x}_n + {\boldsymbol\epsilon}_n$, a noisy version of $\mathbf{x}_n$. Then, the linear denoising autoencoder tries to minimize
+		\question Following Question 4, assume that noise vectors ${\boldsymbol\epsilon}_n$ are generated i.i.d. from a zero-mean, unit variance Gaussian distribution and added to $\mathbf{x}_n$ to make $\tilde{\mathbf{x}}_n = \mathbf{x}_n + {\boldsymbol\epsilon}_n$, a noisy version of $\mathbf{x}_n$. Then, the linear denoising autoencoder tries to minimize
 		\[E_{in}(\mathbf{w}) = \frac{1}{N} \sum_{n=1}^N \|\mathbf{x}_n - \mathbf{w} \mathbf{w}^T (\mathbf{x}_n + {\boldsymbol\epsilon}_n)\| ^2\]
 		For any fixed $\mathbf{w}$, what is $\mathcal{E}\left(E_{in}(\mathbf{w})\right)$, where the expectation $\mathcal{E}$ is taken over the noise generation process?
 		\begin{choices}
-			\choice $\frac{1}{N} \sum_{n=1}^N \|\mathbf{x}_n - \mathbf{w} \mathbf{w}^T \mathbf{x}_n\|^2$
-			\CorrectChoice $\frac{1}{N} \sum_{n=1}^N \|\mathbf{x}_n - \mathbf{w} \mathbf{w}^T \mathbf{x}_n\|^2 + d \mathbf{w}^T \mathbf{w}$
+			\choice $\frac{1}{N} \sum_{n=1}^N \|\mathbf{x}_n - {\mathbf{w} \mathbf{w}^T}^2 \mathbf{x}_n\|^2$
+			\choice $\frac{1}{N}\sum\limits_{n = 1}^N {{{\bf{x}}_n} - {\bf{w}}{{\bf{w}}^T}{{\bf{x}}_n}{^2}}  + d{({{\bf{w}}^T}{\bf{w}})^2}$
 			\choice none of the other choices
-			\choice $\frac{1}{N} \sum_{n=1}^N \|\mathbf{x}_n - \mathbf{w} \mathbf{w}^T \mathbf{x}_n\|^2 + \mathbf{w}^T \mathbf{w}$
-			\choice $\frac{1}{N} \sum_{n=1}^N \|\mathbf{x}_n - \mathbf{w} \mathbf{w}^T \mathbf{x}_n\|^2 + \frac{1}{d} \mathbf{w}^T \mathbf{w}$\\
+			\CorrectChoice $\frac{1}{N} \sum_{n=1}^N \|\mathbf{x}_n - \mathbf{w} \mathbf{w}^T \mathbf{x}_n\|^2 + {({{\bf{w}}^T}{\bf{w}})^2}$
+			\choice $\frac{1}{N} \sum_{n=1}^N \|\mathbf{x}_n - \mathbf{w} \mathbf{w}^T \mathbf{x}_n\|^2 + \frac{1}{d} {({{\bf{w}}^T}{\bf{w}})^2}$\\
 		\end{choices}
 		
 		\question \textbf{Nearest Neighbor and RBF Network}\\

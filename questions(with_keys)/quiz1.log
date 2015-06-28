@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  24 FEB 2015 23:23
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  28 JUN 2015 15:16
 entering extended mode
 **quiz1.tex
 
@@ -16,14 +16,14 @@ Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (D:\CTEX\MiKTeX\tex\latex\base\size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -40,40 +40,40 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \covfp@exhd=\skip52
 \covrun@exft=\skip53
 \covfp@exft=\skip54
-\c@num@coverpages=\count88
-\c@latest@ques=\count89
-\c@ques@end=\count90
-\c@last@object=\count91
-\c@incmp@ques=\count92
-\c@next@ques=\count93
-\c@nextq@page=\count94
-\c@tmp@hlfcntr=\count95
-\c@ifpos@cntr=\count96
-\c@question=\count97
-\c@partno=\count98
-\c@subpart=\count99
-\c@subsubpart=\count100
-\c@choice=\count101
-\c@numpoints=\count102
-\c@numbonuspoints=\count103
-\c@pointsof@thisquestion=\count104
-\c@bonuspointsof@thisquestion=\count105
-\c@numquestions=\count106
-\c@numparts=\count107
-\c@numsubparts=\count108
-\c@numsubsubparts=\count109
-\c@Curr@Page=\count110
-\c@@pagepoints=\count111
-\c@@pagebonuspoints=\count112
-\c@pageof@pagepoints=\count113
-\c@pageof@pagebonuspoints=\count114
-\c@latest@points=\count115
-\c@latest@bonuspoints=\count116
+\c@num@coverpages=\count87
+\c@latest@ques=\count88
+\c@ques@end=\count89
+\c@last@object=\count90
+\c@incmp@ques=\count91
+\c@next@ques=\count92
+\c@nextq@page=\count93
+\c@tmp@hlfcntr=\count94
+\c@ifpos@cntr=\count95
+\c@question=\count96
+\c@partno=\count97
+\c@subpart=\count98
+\c@subsubpart=\count99
+\c@choice=\count100
+\c@numpoints=\count101
+\c@numbonuspoints=\count102
+\c@pointsof@thisquestion=\count103
+\c@bonuspointsof@thisquestion=\count104
+\c@numquestions=\count105
+\c@numparts=\count106
+\c@numsubparts=\count107
+\c@numsubsubparts=\count108
+\c@Curr@Page=\count109
+\c@@pagepoints=\count110
+\c@@pagebonuspoints=\count111
+\c@pageof@pagepoints=\count112
+\c@pageof@pagebonuspoints=\count113
+\c@latest@points=\count114
+\c@latest@bonuspoints=\count115
 \pageinfo@commands=\toks14
 \temp@toks=\toks15
 \pagepoint@commands=\toks16
 \point@toks=\toks17
-\c@ques@object=\count117
+\c@ques@object=\count116
 \marginpointssep=\skip55
 \rightpointsmargin=\skip56
 \choice@toks=\toks18
@@ -84,13 +84,13 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \linefillthickness=\skip61
 \dottedlinefillheight=\skip62
 \minboxheight=\skip63
-\c@@iterator=\count118
+\c@@iterator=\count117
 \@cellwidth=\skip64
-\c@tbl@points=\count119
-\c@tbl@bonuspoints=\count120
-\c@num@cols=\count121
+\c@tbl@points=\count118
+\c@tbl@bonuspoints=\count119
+\c@num@cols=\count120
 \saved@totalleftmargin=\dimen103
-\@sollistdepth=\count122
+\@sollistdepth=\count121
 \FrameRule=\dimen104
 \FrameSep=\dimen105
 )
@@ -102,50 +102,50 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 )
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+(D:\CTEX\MiKTeX\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip65
 
 For additional information on amsmath, use the `?' option.
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+(D:\CTEX\MiKTeX\tex\latex\amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+(D:\CTEX\MiKTeX\tex\latex\amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks20
 \ex@=\dimen106
 ))
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+(D:\CTEX\MiKTeX\tex\latex\amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen107
 )
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+(D:\CTEX\MiKTeX\tex\latex\amsmath\amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count123
-LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count124
-\leftroot@=\count125
-LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count126
-\DOTSCASE@=\count127
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+\inf@bad=\count122
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count123
+\leftroot@=\count124
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count125
+\DOTSCASE@=\count126
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen108
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count128
-\c@MaxMatrixCols=\count129
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count127
+\c@MaxMatrixCols=\count128
 \dotsspace@=\muskip10
-\c@parentequation=\count130
-\dspbrk@lvl=\count131
+\c@parentequation=\count129
+\dspbrk@lvl=\count130
 \tag@help=\toks21
-\row@=\count132
-\column@=\count133
-\maxfields@=\count134
+\row@=\count131
+\column@=\count132
+\maxfields@=\count133
 \andhelp@=\toks22
 \eqnshift@=\dimen109
 \alignsep@=\dimen110
@@ -157,8 +157,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \multlinegap=\skip66
 \multlinetaggap=\skip67
 \mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
 (D:\CTEX\MiKTeX\tex\latex\base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
@@ -183,7 +183,7 @@ Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -193,10 +193,9 @@ Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
 Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
 Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode not found.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
 Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
 Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
@@ -222,13 +221,13 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
 \@linkdim=\dimen115
-\Hy@linkcounter=\count135
-\Hy@pagecounter=\count136
+\Hy@linkcounter=\count134
+\Hy@pagecounter=\count135
 
 (D:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count137
+\Hy@SavedSpaceFactor=\count136
 
 (D:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -241,14 +240,14 @@ Package hyperref Info: Plain pages OFF on input line 4061.
 Package hyperref Info: Backreferencing OFF on input line 4066.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4284.
-\c@Hy@tempcnt=\count138
+\c@Hy@tempcnt=\count137
 
-(D:\CTEX\MiKTeX\tex\xelatex\xetexurl\url.sty
+(D:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
 \Urlmuskip=\muskip11
-Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4637.
-\Fld@menulength=\count139
+\Fld@menulength=\count138
 \Field@Width=\dimen116
 \Fld@charsize=\dimen117
 Package hyperref Info: Hyper figures OFF on input line 5757.
@@ -260,434 +259,269 @@ Package hyperref Info: Link coloring with OCG OFF on input line 5782.
 Package hyperref Info: PDF/A mode OFF on input line 5787.
 LaTeX Info: Redefining \ref on input line 5827.
 LaTeX Info: Redefining \pageref on input line 5831.
-\Hy@abspage=\count140
-\c@Item=\count141
-\c@Hfootnote=\count142
+\Hy@abspage=\count139
+\c@Item=\count140
+\c@Hfootnote=\count141
 )
 
-Package hyperref Message: Driver (autodetected): hxetex.
+Package hyperref Message: Driver (autodetected): hpdftex.
 
-(D:\CTEX\MiKTeX\tex\latex\hyperref\hxetex.def
-File: hxetex.def 2012/02/06 v6.82o Hyperref driver for XeTeX
-
-(D:\CTEX\MiKTeX\tex\latex\hyperref\puenc.def
-File: puenc.def 2012/02/06 v6.82o Hyperref: PDF Unicode definition (HO)
-)
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\stringenc.sty
-Package: stringenc 2010/03/01 v1.8 Converts strings between encodings (HO)
-)
-\pdfm@box=\box28
-\c@Hy@AnnotLevel=\count143
-\HyField@AnnotCount=\count144
-\Fld@listcount=\count145
-\c@bookmark@seq@number=\count146
+(D:\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def
+File: hpdftex.def 2012/02/06 v6.82o Hyperref driver for pdfTeX
+\Fld@listcount=\count142
+\c@bookmark@seq@number=\count143
 
 (D:\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
-(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
-
-(rerunfilecheck)             Therefore file contents cannot be checked efficien
-tly
-(rerunfilecheck)             and the loading of the package is aborted.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
 )
 \Hy@SectionHShift=\skip68
 )
-(D:\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-
-! LaTeX Error: Command \lhead already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.266 ...lhead}{\@ifnextchar[{\@xlhead}{\@ylhead}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \chead already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 ...chead}{\@ifnextchar[{\@xchead}{\@ychead}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \rhead already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.274 ...rhead}{\@ifnextchar[{\@xrhead}{\@yrhead}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \lfoot already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.278 ...lfoot}{\@ifnextchar[{\@xlfoot}{\@ylfoot}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \cfoot already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.282 ...cfoot}{\@ifnextchar[{\@xcfoot}{\@ycfoot}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \rfoot already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.286 ...rfoot}{\@ifnextchar[{\@xrfoot}{\@yrfoot}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-\fancy@headwidth=\skip69
-\f@ncyO@elh=\skip70
-\f@ncyO@erh=\skip71
-\f@ncyO@olh=\skip72
-\f@ncyO@orh=\skip73
-\f@ncyO@elf=\skip74
-\f@ncyO@erf=\skip75
-\f@ncyO@olf=\skip76
-\f@ncyO@orf=\skip77
-)
 (C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
 )\quiz1.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-\AtBeginShipoutBox=\box29
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+\AtBeginShipoutBox=\box28
  (D:\CTEX\MiKTeX\tex\latex\graphics\color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (D:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: xetex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 130.
 
-(D:\CTEX\MiKTeX\tex\xelatex\xetex-def\xetex.def
-File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
+(D:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count144
 
-))
-Package hyperref Info: Link coloring ON on input line 12.
-
-(D:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
+(D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count145
+\scratchdimen=\dimen118
+\scratchbox=\box29
+\nofMPsegments=\count146
+\nofMParguments=\count147
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count148
+\MPscratchDim=\dimen119
+\MPnumerator=\count149
+\makeMPintoPDFobject=\count150
+\everyMPtoPDFconversion=\toks27
+)))
+Package hyperref Info: Link coloring ON on input line 15.
+ (D:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (D:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count147
+\c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
+LaTeX Info: Redefining \ref on input line 15.
+LaTeX Info: Redefining \pageref on input line 15.
+LaTeX Info: Redefining \nameref on input line 15.
 
 (C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
 )\quiz1.out)
 (C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
 )\quiz1.out)
 \@outlinefile=\write3
-Requested font "cmr17" at 17.28pt
- -> cmr17
-Requested font "cmr12" at 12.0pt
- -> cmr12
-Requested font "cmr8" at 8.0pt
- -> cmr8
-Requested font "cmr6" at 6.0pt
- -> cmr6
-Requested font "cmmi12" at 12.0pt
- -> cmmi12
-Requested font "cmmi8" at 8.0pt
- -> cmmi8
-Requested font "cmmi6" at 6.0pt
- -> cmmi6
-Requested font "cmsy10" at 12.0pt
- -> cmsy10
-Requested font "cmsy8" at 8.0pt
- -> cmsy8
-Requested font "cmsy6" at 6.0pt
- -> cmsy6
-Requested font "cmex10" at 12.0pt
- -> cmex10
-Requested font "cmex8" at 8.0pt
- -> cmex8
-Requested font "cmex7" at 6.0pt
- -> cmex7
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
  (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-Requested font "msam10" at 12.0pt
- -> msam10
-Requested font "msam10" at 8.0pt
- -> msam10
-Requested font "msam7" at 6.0pt
- -> msam7
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Requested font "msbm10" at 12.0pt
- -> msbm10
-Requested font "msbm10" at 8.0pt
- -> msbm10
-Requested font "msbm7" at 6.0pt
- -> msbm7
-LaTeX Font Info:    Try loading font information for U+lasy on input line 18.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 17.
 
 (D:\CTEX\MiKTeX\tex\latex\base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Requested font "lasy10" at 12.0pt
- -> lasy10
-Requested font "lasy8" at 8.0pt
- -> lasy8
-Requested font "lasy6" at 6.0pt
- -> lasy6
-Requested font "cmex7" at 7.0pt
- -> cmex7
-Requested font "cmex7" at 5.0pt
- -> cmex7
-Requested font "msam10" at 10.0pt
- -> msam10
-Requested font "msam7" at 7.0pt
- -> msam7
-Requested font "msam5" at 5.0pt
- -> msam5
-Requested font "msbm10" at 10.0pt
- -> msbm10
-Requested font "msbm7" at 7.0pt
- -> msbm7
-Requested font "msbm5" at 5.0pt
- -> msbm5
-Requested font "lasy10" at 10.0pt
- -> lasy10
-Requested font "lasy7" at 7.0pt
- -> lasy7
-Requested font "lasy5" at 5.0pt
- -> lasy5
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-Requested font "cmbx10" at 10.0pt
- -> cmbx10
-Requested font "cmbx7" at 7.0pt
- -> cmbx7
-Requested font "cmbx5" at 5.0pt
- -> cmbx5
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-Requested font "cmmib10" at 10.0pt
- -> cmmib10
-Requested font "cmmib7" at 7.0pt
- -> cmmib7
-Requested font "cmmib5" at 5.0pt
- -> cmmib5
-Requested font "cmbsy10" at 10.0pt
- -> cmbsy10
-Requested font "cmbsy7" at 7.0pt
- -> cmbsy7
-Requested font "cmbsy5" at 5.0pt
- -> cmbsy5
-Requested font "lasyb10" at 10.0pt
- -> lasyb10
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 45.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 45.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-
- []
-
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\se-ascii-print.def
-File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
-) [1
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+[1
+
+{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-Missing character: There is no â€² in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ² in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-Missing character: There is no â€² in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ² in font cmr10!
 
-Overfull \hbox (50.70438pt too wide) in paragraph at lines 118--119
+Overfull \hbox (50.70438pt too wide) in paragraph at lines 117--118
 []\OT1/cmr/m/n/10 Pick some $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 with $\OML/cmm
-/m/it/10 ^^U[] > \OT1/cmr/m/n/10 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = 
-[]$ 
+/m/it/10 [] > \OT1/cmr/m/n/10 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = []
+$ 
+ []
+
+
+Overfull \hbox (50.70438pt too wide) in paragraph at lines 119--120
+[]\OT1/cmr/m/n/10 Pick some $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 with $\OML/cmm
+/m/it/10 [] \OT1/cmr/m/n/10 = 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = []
+$ 
  []
 
 
 Overfull \hbox (50.70438pt too wide) in paragraph at lines 120--121
 []\OT1/cmr/m/n/10 Pick some $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 with $\OML/cmm
-/m/it/10 ^^U[] \OT1/cmr/m/n/10 = 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = 
-[]$ 
+/m/it/10 [] \OT1/cmr/m/n/10 = 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = []
+$ 
  []
 
 
 Overfull \hbox (50.70438pt too wide) in paragraph at lines 121--122
 []\OT1/cmr/m/n/10 Pick some $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 with $\OML/cmm
-/m/it/10 ^^U[] \OT1/cmr/m/n/10 = 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = 
-[]$ 
+/m/it/10 [] > \OT1/cmr/m/n/10 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = []
+$ 
  []
 
 
-Overfull \hbox (50.70438pt too wide) in paragraph at lines 122--123
-[]\OT1/cmr/m/n/10 Pick some $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 with $\OML/cmm
-/m/it/10 ^^U[] > \OT1/cmr/m/n/10 0$, and $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = 
-[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 [6]
 This exam contains 20 questions with 0 parts, 0 subparts, and 0 subsubparts.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
 
 (C:\Users\_lxy\Documents\MATLAB\machine_learning_techniques\questions(with_keys
 )\quiz1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 266.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 266.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
+Package rerunfilecheck Info: File `quiz1.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 7627 strings out of 430478
- 102508 string characters out of 3191502
- 194745 words of memory out of 3000000
- 10714 multiletter control sequences out of 15000+200000
+ 6537 strings out of 495354
+ 92959 string characters out of 3183860
+ 200474 words of memory out of 3000000
+ 9630 multiletter control sequences out of 15000+200000
  13782 words of font info for 57 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,12n,43p,678b,536s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,11n,22p,678b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmbx7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/CTEX/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mmib10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><D:/C
+TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr17.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r5.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/CTEX/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.p
+fb>
+Output written on quiz1.pdf (6 pages, 176982 bytes).
+PDF statistics:
+ 116 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on quiz1.pdf (6 pages).

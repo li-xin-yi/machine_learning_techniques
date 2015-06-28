@@ -3,27 +3,26 @@
 \usepackage{amsmath}
 \usepackage{latexsym}
 \usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
-\usepackage{fancyhdr}
 \title{QUIZ1}
 \date{}
 \author{}
+\lhead{}
+\chead{Homework of Meachine Learning Techniques: Quiz1}
+\rhead{}
+\headrule
 %\printanswers
 
 \begin{document}
-	\pagestyle{fancy}
-	\lhead{}
-	\chead{Homework of Meachine Learning Techniques: Quiz1}
-	\rhead{}
 	\maketitle
 \begin{questions}
 	 \question Recall that $N$ is the size of the data set and $d$ is the dimensionality of the input space. The primal formulation of the linear soft-margin support vector machine problem, without going through the Lagrangian dual problem, is
-	 \begin{choices}
+	 \begin{checkboxes}
 	 	\choice a quadratic programming problem with $N$ variables
 	 	\choice a quadratic programming problem with $d+1$ variables
 	 	\choice none of the other choices
 	 	\choice a quadratic programming problem with $2N$ variables
 	 	\CorrectChoice a quadratic programming problem with $N+d+1$ variables\\
-	 \end{choices}
+	 \end{checkboxes}
 	 
 	 \question Consider the following training data set:
 	 \[\mathbf{x}_1 = (1, 0), y_1 = -1 \quad \quad \mathbf{x}_2 = (0, 1), y_2 = -1 \quad \quad \mathbf{x}_3 = (0,-1), y_3=-1\]
@@ -32,95 +31,95 @@
 	 Use following nonlinear transformation of the input vector $\mathbf{x} = (x_1, x_2)$ to the transformed vector $\mathbf{z} = (\phi_1(\mathbf{x}), \phi_2(\mathbf{x}))$:
 	 \[\phi_1(\mathbf{x}) = x_2^2 - 2x_1 + 3 \quad \quad \phi_2(\mathbf{x}) = x_1^2 - 2 x_2 - 3\]
 	 What is the equation of the optimal separating ``hyperplane'' in the $\mathcal{Z}$ space?
-	 \begin{choices}
+	 \begin{checkboxes}
 	 	\choice $z_1 + z_2 = 4.5$
 	 	\choice $z_1 - z_2 = 4.5$
 	 	\CorrectChoice $z_1 = 4.5$
 	 	\choice $z_2 = 4.5$
 	 	\choice none of the other choices\\
-	 \end{choices}
+	 \end{checkboxes}
 	 
 	 \question Consider the same training data set as Question 2, but instead of explicitly transforming the input space $\mathcal{X}$ to $\mathcal{Z}$, apply the hard-margin support vector machine algorithm with the kernel function
 	 \[K(\mathbf{x}, \mathbf{x}') = (1 + \mathbf{x}^T \mathbf{x}')^2,\]
 	 which corresponds to a second-order polynomial transformation. Set up the optimization problem using $(\alpha_1, \cdots, \alpha_7)$ and numerically solve for them (you can use any package you want). Which of the followings are true about the optimal ${\boldsymbol\alpha}$?
-	 \begin{choices}
+	 \begin{checkboxes}
 	 	\CorrectChoice $\sum_{n=1}^7 \alpha_n \approx 2.8148$
 	 	\CorrectChoice $\min_{1 \le n \le 7} \alpha_n = \alpha_7$
 	 	\choice there are 6 nonzero $\alpha_n$
 	 	\choice none of the other choices
 	 	\choice $\max_{1 \le n \le 7} \alpha_n = \alpha_7$\\
-	 \end{choices}
+	 \end{checkboxes}
 	 
 	 \question Following Question 3, what is the corresponding nonlinear curve in the $\mathcal{X}$ space?
-	 \begin{choices}
+	 \begin{checkboxes}
 	 	\CorrectChoice $\frac{1}{9}(8x_1^2-16x_1+6x_2^2 - 15) = 0$
 	 	\choice none of the other choices
 	 	\choice $\frac{1}{9}(8x_2^2-16x_2+6x_1^2 + 15) = 0$
 	 	\choice $\frac{1}{9}(8x_2^2-16x_2+6x_1^2 - 15) = 0$
 	 	\choice $\frac{1}{9}(8x_1^2-16x_1+6x_2^2 + 15) = 0$\\
-	 \end{choices}
+	 \end{checkboxes}
 	 
 	\question Compare the two nonlinear curves found in Questions 2 and 4, which of the following is true?
-	\begin{choices}
+	\begin{checkboxes}
 		\choice none of the other choices
 		\choice The curves should be the same in the $\mathcal{X}$ space, because they are learned with respect to the same $\mathcal{Z}$ space
 		\CorrectChoice The curves should be different in the $\mathcal{X}$ space, because they are learned with respect to different $\mathcal{Z}$ spaces
 		\choice The curves should be different in the $\mathcal{X}$ space, because they are learned from different raw data $\{(\mathbf{x}_n, y_n)\}$
 		\choice The curves should be the same in the $\mathcal{X}$ space, because they are learned from the same raw data $\{(\mathbf{x}_n, y_n)\}$\\
-	\end{choices}
+	\end{checkboxes}
 	
 	\question Recall that for support vector machines, $d_{vc}$ is upper bounded by $\frac{R^2}{\rho^2}$, where $\rho$ is the margin and $R$ is the radius of the minimum hypersphere that $\mathcal{X}$ resides in. In general, $R$ should come from our knowledge on the learning problem, but we can estimate it by looking at the minimum hypersphere that the training examples resides in. In particular, we want to seek for the optimal $R$ that solves \[(P) \; \; \; \min_{R \in \mathbb{R}, \mathbf{c} \in \mathbb{R}^d} \; \; \; R^2 \; \; \; \mbox{subject to } \|\mathbf{x}_n - \mathbf{c}\|^2 \le R^2 \mbox{ for } n = 1, 2, \cdots, N.\]
 	Let $\lambda_n$ be the Lagrange multipliers for the n-th constraint above. Following the derivation of the dual support vector machine in class, write down $(P)$ as an equivalent optimization problem \[\min_{R \in \mathbb{R}, \mathbf{c} \in \mathbb{R}^d} \;\;\; \max_{\lambda_n \ge 0} \;\;\; L(R, \mathbf{c}, {\boldsymbol\lambda}).\] What is $L(R, \mathbf{c}, {\boldsymbol\lambda})?$
 	
-	\begin{choices}
+	\begin{checkboxes}
 		\CorrectChoice $R^2 + \sum_{n=1}^N \lambda_n( \|\mathbf{x}_n - \mathbf{c}\|^2 - R^2)$
 		\choice $R^2 - \sum_{n=1}^N \lambda_n( \|\mathbf{x}_n - \mathbf{c}\|^2 - R^2)$
 		\choice $R^2 + \sum_{n=1}^N \lambda_n( \|\mathbf{x}_n - \mathbf{c}\|^2 + R^2)$
 		\choice $R^2 - \sum_{n=1}^N \lambda_n( \|\mathbf{x}_n - \mathbf{c}\|^2 + R^2)$
 		\choice none of the other choices\\
-	\end{choices}
+	\end{checkboxes}
 	
 	\question Using (assuming) strong duality, the solution to $(P)$ in Question 6 would be the same as the Lagrange dual problem
 	\[(D) \; \; \; \max_{\lambda_n \ge 0} \;\;\; \min_{R \in \mathbb{R}, \mathbf{c} \in \mathbb{R}^d}  \;\;\;  L(R, \mathbf{c}, {\boldsymbol\lambda}).\]
 	Which of the following can be derived from the KKT conditions of $(P)$ and $(D)$ at the optimal $(R, \mathbf{c}, {\boldsymbol\lambda})$?
-	\begin{choices}
+	\begin{checkboxes}
 		\CorrectChoice if $\sum_{n=1}^N \lambda_n \neq 0$, then $\mathbf{c} = \left(\sum_{n=1}^N \lambda_n \mathbf{x}_n\right) \Big/ \left(\sum_{n=1}^N \lambda_n\right)$
 		\choice if $\lambda_n = 0$, then $\|\mathbf{x}_n - \mathbf{c}\|^2 - R^2 = 0$
 		\CorrectChoice if $R \neq 0$, then $R \neq 0$
 		\choice none of the other choices
 		\choice if $\|\mathbf{x}_n - \mathbf{c}\|^2 - R^2 < 0$, then $\lambda_n = 0$\\
-   \end{choices}
+   \end{checkboxes}
    
    \question Continue from Question 7 and assume that all the $\mathbf{x}_n$ are different, which implies that the optimal $R>0$. Using the KKT conditions to simplify the Lagrange dual problem, and obtain a dual problem that involves only $\lambda_n$. One form of the dual problem should look like
    \[(D') \; \; \; \max_{\lambda_n \ge 0} \; \; \; \mbox{Objective}(\boldsymbol\lambda) \; \; \; \mbox{subject to } \sum_{n=1}^N \lambda_n = \mbox{constant}\]
    Which of the following is $\mbox{Objective}(\boldsymbol\lambda)$?
    
-   \begin{choices}
+   \begin{checkboxes}
    	 \choice $\sum_{n=1}^N \lambda_n (\|\mathbf{x}_n - \sum_{m=1}^N \lambda_m \mathbf{x}_m \|^2) + 2(\sum_{n=1}^N \lambda_n \mathbf{x}_n)^2$
    	 \choice $\sum_{n=1}^N \lambda_n (\|\mathbf{x}_n + \sum_{m=1}^N \lambda_m \mathbf{x}_m \|^2) + 2(\sum_{n=1}^N \lambda_n \mathbf{x}_n)^2$
    	 \choice $\sum_{n=1}^N \lambda_n (\|\mathbf{x}_n + \sum_{m=1}^N \lambda_m \mathbf{x}_m \|^2)$
    	 \choice none of the other choices
    	 \CorrectChoice $\sum_{n=1}^N \lambda_n (\|\mathbf{x}_n - \sum_{m=1}^N \lambda_m \mathbf{x}_m \|^2)$\\
-   \end{choices}
+   \end{checkboxes}
    
    \question Continue from Question 8 and consider using $\mathbf{z}_n = {\boldsymbol\phi}(\mathbf{x}_n)$ instead of $\mathbf{x}_n$ while assuming that all the $\mathbf{z}_n$ are different. Then, write down the optimization problem that uses $K(\mathbf{x}_n, \mathbf{x}_m)$ to replace $\mathbf{z}_n^T \mathbf{z}_m$---that is, the kernel trick. Which of the following is $\mbox{Objective}(\boldsymbol\lambda)$ of $(D′)$ after applying the kernel trick?
-   \begin{choices}
+   \begin{checkboxes}
    	\choice $\sum_{n=1}^N \lambda_n K(\mathbf{x}_n, \mathbf{x}_n) + 3\sum_{n=1}^N \sum_{m=1}^N \lambda_n \lambda_m K(\mathbf{x}_n, \mathbf{x}_m)$
     \CorrectChoice $\sum_{n=1}^N \lambda_n K(\mathbf{x}_n, \mathbf{x}_n) - 1\sum_{n=1}^N \sum_{m=1}^N \lambda_n \lambda_m K(\mathbf{x}_n, \mathbf{x}_m$
     \choice $\sum_{n=1}^N \lambda_n K(\mathbf{x}_n, \mathbf{x}_n) - 3\sum_{n=1}^N \sum_{m=1}^N \lambda_n \lambda_m K(\mathbf{x}_n, \mathbf{x}_m)$
     \choice none of the other choices
     \choice $\sum_{n=1}^N \lambda_n K(\mathbf{x}_n, \mathbf{x}_n) + 1\sum_{n=1}^N \sum_{m=1}^N \lambda_n \lambda_m K(\mathbf{x}_n, \mathbf{x}_m$\\
-   	\end{choices}
+   	\end{checkboxes}
    
    \question Continue from Question 9 and solve the $(D′)$ that involves the kernel $K$, which of the following formula evaluates the optimal $R$?
    
-   \begin{choices}
+   \begin{checkboxes}
    	\choice Pick some $i$ with $\lambda_i > 0$, and $R = \sqrt{K(\mathbf{x}_i, \mathbf{x}_i) + 2 \sum_{m=1}^N \lambda_m K(\mathbf{x}_i, \mathbf{x}_m) + \sum_{n=1}^N \sum_{m=1}^N \lambda_n \lambda_m K(\mathbf{x}_n, \mathbf{x}_m)}$
    	\choice none of the other choices
    	\choice Pick some $i$ with $\lambda_i = 0$, and $R = \sqrt{K(\mathbf{x}_i, \mathbf{x}_i) - 2 \sum_{m=1}^N \lambda_m K(\mathbf{x}_i, \mathbf{x}_m) + \sum_{n=1}^N \sum_{m=1}^N \lambda_n \lambda_m K(\mathbf{x}_n, \mathbf{x}_m)}$
    	\choice Pick some $i$ with $\lambda_i = 0$, and $R = \sqrt{K(\mathbf{x}_i, \mathbf{x}_i) + 2 \sum_{m=1}^N \lambda_m K(\mathbf{x}_i, \mathbf{x}_m) + \sum_{n=1}^N \sum_{m=1}^N \lambda_n \lambda_m K(\mathbf{x}_n, \mathbf{x}_m)}$
    	\CorrectChoice Pick some $i$ with $\lambda_i > 0$, and $R = \sqrt{K(\mathbf{x}_i, \mathbf{x}_i) - 2 \sum_{m=1}^N \lambda_m K(\mathbf{x}_i, \mathbf{x}_m) + \sum_{n=1}^N \sum_{m=1}^N \lambda_n \lambda_m K(\mathbf{x}_n, \mathbf{x}_m)}$\\
-   \end{choices}
+   \end{checkboxes}
    
    \question In the class, we taught the soft-margin support vector machine as follows.
    \begin{eqnarray*}
@@ -142,41 +141,41 @@
    \end{eqnarray*}
    Problem $(P_2)$ is equivalent to a linear hard-margin support vector machine (primal problem) that takes examples $(\tilde{\mathbf{x}}_n, y_n)$ instead of $(\mathbf{x}_n, y_n)$. That is, the hard-margin dual problem that involves $\tilde{\mathbf{x}}_n$ is simply the dual problem of $(P_2)$. Use $[[ \cdot ]]$ to denote the boolean function which evaluates to 1 if and only iff the inner condition is true. Which of the following is $\tilde{\mathbf{x}}_n$? (Hint: $\tilde{\mathbf{w}} = (\mathbf{w}, \textrm{constant} \cdot \boldsymbol\xi)$)
    
-   \begin{choices}
+   \begin{checkboxes}
    	\CorrectChoice $\tilde{\mathbf{x}}_n = (\mathbf{x}_n, v_1, v_2, \cdots, v_N)$, where $v_i = \frac{1}{\sqrt{2C}} [[ i = n ]]$
    	\choice $\tilde{\mathbf{x}}_n = (\mathbf{x}_n, v, v, \cdots, v)$, where there are $N$ components of $v = \frac{1}{\sqrt{2C}}$
    	\choice $\tilde{\mathbf{x}}_n = (\mathbf{x}_n, v_1, v_2, \cdots, v_N)$, where $v_i = \frac{1}{\sqrt{C}} [[ i = n ]]$
    	\choice $\tilde{\mathbf{x}}_n = (\mathbf{x}_n, v, v, \cdots, v)$, where there are $N$ components of $v = \frac{1}{\sqrt{C}}$
    	\choice none of the other choices\\
-   \end{choices}
+   \end{checkboxes}
    
    \question Let $K_1(\mathbf{x}, \mathbf{x}') = {\boldsymbol\phi}_1(\mathbf{x}) ^T {\boldsymbol\phi}_1(\mathbf{x}')$ and $K_2(\mathbf{x}, \mathbf{x}') = {\boldsymbol\phi}_2(\mathbf{x}) ^T {\boldsymbol\phi}_2(\mathbf{x}')$ be two valid kernels. Which of the followings are always valid kernels, assuming that $K_2(\mathbf{x}, \mathbf{x}') \neq 0$ for all $x$ and $\mathbf{x}'$?
-   \begin{choices}
+   \begin{checkboxes}
    	 \CorrectChoice $K(\mathbf{x}, \mathbf{x}') = K_1(\mathbf{x}, \mathbf{x}') \cdot K_2(\mathbf{x}, \mathbf{x}')$
    	 \choice none of the other choices
    	 \choice $K(\mathbf{x}, \mathbf{x}') = K_1(\mathbf{x}, \mathbf{x}') - K_2(\mathbf{x}, \mathbf{x}')$
    	 \CorrectChoice $K(\mathbf{x}, \mathbf{x}') = K_1(\mathbf{x}, \mathbf{x}') + K_2(\mathbf{x}, \mathbf{x}')$
    	 \choice $K(\mathbf{x}, \mathbf{x}') = K_1(\mathbf{x}, \mathbf{x}') / K_2(\mathbf{x}, \mathbf{x}')$\\
-   \end{choices}
+   \end{checkboxes}
    
    \question Let $K_1(\mathbf{x}, \mathbf{x}') = {\boldsymbol\phi}_1(\mathbf{x}) ^T {\boldsymbol\phi}_1(\mathbf{x}')$ be a valid kernel. Which of the followings are always valid kernels?
-   \begin{choices}
+   \begin{checkboxes}
    	 \choice $K(\mathbf{x}, \mathbf{x}') = (1 - K_1(\mathbf{x}, \mathbf{x}'))^{2}$
    	 \choice none of the other choices
    	 \choice $K(\mathbf{x}, \mathbf{x}') = \exp(-K_1(\mathbf{x}, \mathbf{x}'))$
    	 \CorrectChoice $K(\mathbf{x}, \mathbf{x}') = 1126 \cdot K_1(\mathbf{x}, \mathbf{x}')$
    	 \CorrectChoice $K(\mathbf{x}, \mathbf{x}') = (1 - K_1(\mathbf{x}, \mathbf{x}'))^{-1}$, assuming that $0 < K_1(\mathbf{x}, \mathbf{x}') < 1$\\
-   \end{choices}
+   \end{checkboxes}
    
    \question For a given valid kernel $K$, consider a new kernel $\tilde{K}(\mathbf{x}, \mathbf{x}') = p K(\mathbf{x}, \mathbf{x}') + q$ for some $p>0$ and $q>0$. Which of the following statement is true?
-  \begin{choices}
+  \begin{checkboxes}
   	\choice For the dual of soft-margin support vector machine, using $\tilde{K}$ along with a new $\tilde{C} = pC + q$ instead of $K$ with the original $C$ leads to an equivalent $g_{SVM}$ classifier.
   	\choice For the dual of soft-margin support vector machine, using $\tilde{K}$ along with a new $\tilde{C} = \frac{C}{p} + q$ instead of $K$ with the original $C$ leads to an equivalent $g_{SVM}$ classifier.
   	\choice none of the other choices
     \choice For the dual of soft-margin support vector machine, using $\tilde{K}$ along with a new $\tilde{C} = pC$ instead of $K$ with the original $C$ leads to an equivalent $g_{SVM}$ classifier.
    	\choice For the dual of soft-margin support vector machine, using $\tilde{K}$ along with a new $\tilde{C} = \frac{C}{p} + q$ instead of $K$ with the original $C$ leads to an equivalent $g_{SVM}$ classifier.
   	\CorrectChoice For the dual of soft-margin support vector machine, using $\tilde{K}$ along with a new $\tilde{C} = \frac{C}{p}$ instead of $K$ with the original $C$ leads to an equivalent $g_{SVM}$\\ classifier.
-  \end{choices}
+  \end{checkboxes}
   
   \question For Questions 15 to 20, we are going to experiment with a real-world data set. Download the processed US Postal Service Zip Code data set with extracted features of intensity and symmetry for training and testing:
   
@@ -208,59 +207,59 @@
   
   (ii) It is your responsibility to check whether your chosen package solves the designated formulation with enough numerical precision. Please read the manual of your chosen package for software parameters whose values affect the outcome---any ML practitioner needs to deal with this kind of added uncertainty.
   Consider the linear soft-margin SVM. That is, either solve the primal formulation of soft-margin SVM with the given $\mathbf{x}_n$, or take the linear kernel $K(\mathbf{x}_n,\mathbf{x}_m) = \mathbf{x}_n^{\mathrm{T}} \mathbf{x}_m$ in the dual formulation. With $C=0.01$, and the binary classification problem of ``0'' versus ``not 0'', which of the following numbers is closest to $\|\mathbf{w}\|$ after solving the linear soft-margin SVM?
-  \begin{choices}
+  \begin{checkboxes}
   	\choice 0.2
   	\CorrectChoice 0.6
   	\choice 1.4
   	\choice 1.8
   	\choice 1.0\\
-  \end{choices}
+  \end{checkboxes}
   
   \question Consider the polynomial kernel $K(\mathbf{x}_n,\mathbf{x}_m) = (1+ \mathbf{x}_n^{\mathrm{T}} \mathbf{x}_m)^Q$, where $Q$ is the degree of the polynomial. With $C=0.01$, $Q=2$, which of the following soft-margin SVM classifiers reaches the lowest $E_{\rm in}$?
-  \begin{choices}
+  \begin{checkboxes}
   	\choice ``0'' versus ``not 0''
   	\choice ``2'' versus ``not 2''
   	\choice ``4'' versus ``not 4''
   	\choice ``6'' versus ``not 6''
   	\CorrectChoice ``8'' versus ``not 8''\\
-  \end{choices}
+  \end{checkboxes}
   
   \question Following Question16, which of the following numbers is closest to the maximum $\sum_{n=1}^N \alpha_n$ within those five soft-margin SVM classifiers?
-  \begin{choices}
+  \begin{checkboxes}
   	\choice 10.0
   	\choice 25.0
   	\CorrectChoice 20.0
   	\choice 15.0
     \choice 5.0\\	
-  \end{choices}
+  \end{checkboxes}
   
   \question Consider the Gaussian kernel $K(\mathbf{x}_n,\mathbf{x}_m)= \exp\left(-\gamma ||\mathbf{x}_n - \mathbf{x}_m||^2 \right)$. With $\gamma = 100$, and the binary classification problem of ``0'' versus ``not 0''. Consider values of $C$ within $\{0.001, 0.01, 0.1, 1, 10\}$. Which of the following properties of the soft-margin SVM classifier strictly decreases with those five $C$?
-  \begin{choices}
+  \begin{checkboxes}
   	\CorrectChoice the distance of any free support vector to the hyperplane in the (infinite-dimensional) $\mathcal{Z}$ space
   	\CorrectChoice $\sum_{n=1}^N \xi_n$
   	\choice $E_{\rm out}$
   	\choice number of support vectors
   	\CorrectChoice objective value of the dual problem\\ 	
-  \end{choices}
+  \end{checkboxes}
   
   \question Following Question 18, when fixing $C=0.1$, which of the following values of $\gamma$ results in the lowest $E_{\rm out}$?
-  \begin{choices}
+  \begin{checkboxes}
   	\choice 10000
   	\choice 1
   	\choice 100
   	\CorrectChoice 10
   	\choice 1000\\
-  \end{choices}
+  \end{checkboxes}
   
   \question Following Question 18 and consider a validation procedure that randomly samples 1000 examples from the training set for validation and leaves the other examples for training $g^{-}_{SVM}$. Fix $C=0.1$ and use the validation procedure to choose the best $\gamma$ among $\{1, 10, 100, 1000, 10000\}$ according to $E_{\rm val}$. If there is a tie of $E_{\rm val}$, choose the smallest $\gamma$. Repeat the procedure 100 times. Which of the following values of $\gamma$ is selected the most number of times?
   
-  \begin{choices}
+  \begin{checkboxes}
   	\choice 1000
   	\CorrectChoice 10
   	\choice 100
   	\choice 10000
   	\choice 1\\
-  \end{choices}
+  \end{checkboxes}
 \end{questions}
 \clearpage 
 \end{document}

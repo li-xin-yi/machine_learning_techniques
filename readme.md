@@ -1,10 +1,11 @@
 # Code and other materials in machine learning techniques 
 
-~~ Class homepage: https://class.coursera.org/ntumltwo-001 ( no longer available on Coursera) ~~
+~~Class homepage: https://class.coursera.org/ntumltwo-001 ( no longer available on Coursera)~~
 
 https://www.csie.ntu.edu.tw/~htlin/
 
 Pre-course: Machine Learning Foundations
+
 Lecturer: [Hsuan-Tien Lin](https://www.csie.ntu.edu.tw/~htlin/)
 
 ## Materials:

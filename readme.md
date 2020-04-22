@@ -8,7 +8,7 @@ Pre-course: Machine Learning Foundations
 
 Lecturer: [Hsuan-Tien Lin](https://www.csie.ntu.edu.tw/~htlin/)
 
-## Materials:
+## Materials
 
 - Slides: https://github.com/RedstoneWill/HsuanTienLin_MachineLearning/tree/master/Machine%20Learning%20Techniques/ppt
 - Video: https://www.bilibili.com/video/av36760800

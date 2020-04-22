@@ -1,0 +1,278 @@
+\documentclass[a4paper,10pt]{exam}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=green]{hyperref}
+\lhead{}
+\chead{Quiz 2}
+\rhead{}
+\title{Homework of Machine Learning Techniques: Quiz 2}
+\date{}
+\author{}
+\pagestyle{headandfoot}
+\headrule
+% \printanswers
+
+\begin{document}
+\maketitle
+\begin{questions}
+	\question Recall that the probabilistic SVM is based on solving the following optimization problem:
+	\[\mathop {\min }\limits_{A,B} F(A,B) = \frac{1}{N}\sum\limits_{n = 1}^N {\ln } \left( {1 + \exp \left( { - {y_n}\left( {A \cdot ({\bf{w}}_{svm}^T\phi ({{\bf{x}}_n}) + {b_{svm}}) + B} \right)} \right)} \right)\]
+	When using the gradient descent for minimizing $F(A,B)$, we need to compute the gradient first. $z_n = \mathbf{w}_{svm}^T   \mathbf{\phi}(\mathbf{x}_n)+b_{svm}$, and $p_n = \theta(-y_n( A z_n + B))$, where $\theta(s) = \frac{\exp(s)}{1+\exp(s)}$ is the usual logistic function. What is the gradient $\nabla F(A,B)$?
+	\begin{checkboxes}
+		\CorrectChoice $\frac{1}{N}\sum_{n=1}^N [-y_np_nz_n, -y_np_n ]^T$
+		\choice $\frac{1}{N}\sum_{n=1}^N [ -y_np_nz_n, +y_np_n ]^T$
+		\choice $\frac{1}{N}\sum_{n=1}^N [ +y_np_nz_n, -y_np_n ]^T$
+		\choice $\frac{1}{N}\sum_{n=1}^N [ +y_np_nz_n, +y_np_n ]^T$
+		\choice none of the other choices\\
+	\end{checkboxes}
+
+	\question When using the Newton method for minimizing $F(A,B)$ (see Homework 3 of Machine Learning Foundations), we need to compute $-(H(F))^{-1}\nabla F $ in each iteration, where $H(F)$ is the Hessian matrix of $F$ at $(A,B)$. Following the notations of Question 1, what is $H(F)$?
+	\begin{checkboxes}
+		\choice 	$\frac{1}{N}\sum\limits_{n = 1}^N {\left[ {\begin{array}{*{20}{c}}
+							{z_n^2{y_n}(1 - {p_n})} & {{z_n}{y_n}(1 - {p_n})} \\
+							{{z_n}{y_n}(1 - {p_n})} & {{y_n}(1 - {p_n})}
+						\end{array}} \right]} $
+
+		\choice  $\frac{1}{N}\sum\limits_{n = 1}^N {\left[ {\begin{array}{*{20}{c}}
+							{z_n^2{p_n}(1 - {y_n})} & {{z_n}{p_n}(1 - {y_n})} \\
+							{{z_n}{p_n}(1 - {y_n})} & {{p_n}(1 - {y_n})}
+						\end{array}} \right]} $
+
+		\choice none of the other choices
+		\CorrectChoice $\frac{1}{N}\sum\limits_{n = 1}^N {\left[ {\begin{array}{*{20}{c}}
+							{z_n^2{p_n}(1 - {p_n})} & {{z_n}{p_n}(1 - {p_n})} \\
+							{{z_n}{p_n}(1 - {p_n})} & {{p_n}(1 - {p_n})}
+						\end{array}} \right]} $
+		\choice $\frac{1}{N}\sum\limits_{n = 1}^N {\left[ {\begin{array}{*{20}{c}}
+							{z_n^2{y_n}(1 - {y_n})} & {{z_n}{y_n}(1 - {y_n})} \\
+							{{z_n}{y_n}(1 - {y_n})} & {{y_n}(1 - {y_n})}
+						\end{array}} \right]} $\\
+	\end{checkboxes}
+
+	\question Recall that $N$ is the size of the data set and $d$ is the dimensionality of the input space. What is the size of matrix that gets inverted in kernel ridge regression?
+	\begin{checkboxes}
+		\choice $d \times d$
+		\CorrectChoice $N \times N$
+		\choice $Nd \times Nd$
+		\choice $N^2 \times N^2$
+		\choice none of the other choices\\
+	\end{checkboxes}
+
+	\question The usual support vector regression model solves the following optimization problem.
+	\[({P_1})\mathop {\min }\limits_{_{b,{\bf{w}},{{\bf{\xi }}^ \vee },{{\bf{\xi }}^ \wedge }}} \frac{1}{2}{{\bf{w}}^T}{\bf{w}} + C\sum\limits_{n = 1}^N {\left( {\xi _n^ \vee  + \xi _n^ \wedge } \right)}\]\[ {\rm{  s}}.{\rm{t}}. -  - \xi _n^ \vee  \le {y_n} - {{\bf{w}}^T}\phi ({{\bf{x}}_n}) - b \le \epsilon + \xi _n^ \wedge \xi _n^ \vee  \ge 0,\xi _n^ \wedge  \ge 0.\]
+	Usual support vector regression penalizes the violations $\xi^\vee_n$ and $\xi^\wedge_n$linearly. Another popular formulation, called $l_2$ loss support vector regression in $(P2)$, penalizes the violations quadratically, just like the $l_2$ loss SVM introduced in Homework 1 of Machine Learning Techniques.
+	\[({P_2})\mathop {\min }\limits_{b,{\bf{w}},{{\bf{\xi }}^ \vee },{{\bf{\xi }}^ \wedge }} \frac{1}{2}{{\bf{w}}^T}{\bf{w}} + C\sum\limits_{n = 1}^N {\left( {{{(\xi _n^ \vee )}^2} + {{(\xi _n^ \wedge )}^2}} \right)} \]
+	\[{\rm{s}}.{\rm{t}}. -  - \xi _n^ \vee  \le {y_n} - {{\bf{w}}^T}\phi ({{\bf{x}}_n}) - b \le \epsilon  + \xi _n^ \wedge .\]
+	Which of the following is an equivalent `unconstrained' form of $(P2)$?
+
+	\begin{checkboxes}
+		\choice none of the other choices
+		\choice $\min_{b, \mathbf{w}} \frac{1}{2} \mathbf{w}^T \mathbf{w} + C \sum_{n=1}^N (|y_n - \mathbf{w}^T \mathbf{\phi}(\mathbf{x}_n) - b| - \epsilon)^2$
+		\CorrectChoice $\min_{b, \mathbf{w}} \frac{1}{2} \mathbf{w}^T \mathbf{w} + C \sum_{n=1}^N (\max(0, |y_n - \mathbf{w}^T \mathbf{\phi}(\mathbf{x}_n) - b| - \epsilon))^2$\
+		\choice $\min_{b, \mathbf{w}} \frac{1}{2} \mathbf{w}^T \mathbf{w} + C \sum_{n=1}^N (\max(\epsilon, |y_n - \mathbf{w}^T \mathbf{\phi}(\mathbf{x}_n) - b|    ))^2$
+		\choice $\min_{b, \mathbf{w}} \frac{1}{2} \mathbf{w}^T \mathbf{w} + C \sum_{n=1}^N (y_n - \mathbf{w}^T \mathbf{\phi}(\mathbf{x}_n) - b)^2$\\
+	\end{checkboxes}
+
+	\question By a slight modification of the representer theorem presented in the class, the optimal $\mathbf{w}_*$ for $(P2)$ must satisfy $\mathbf{    w}_* = \sum_{n=1}^N \beta_n \mathbf{z}_n$. We can substitute the form of the optimal $\mathbf{w}_*$ into the answer in Question 4 to derive an optimization problem that contains $\mathbf{\beta}$ (and $b$) only, which would look like
+	\[\mathop {\min }\limits_{_{b,{\bf{\beta }}}} F(b,{\bf{\beta }}) = \frac{1}{2}\sum\limits_{m = 1}^N {\sum\limits_{n = 1}^N {{\beta _n}} } {\beta _m}K({{\bf{x}}_n},{{\bf{x}}_m}) + {\rm{ something }},\]
+	where $K(\mathbf{x}_n, \mathbf{x}_m) = (\mathbf{\phi}(\mathbf{x}_n))^T (\mathbf{\phi}(\mathbf{x}_m))$ is the kernel function. One thing that you should see is that $F(b,\beta)$ is differentiable to $\beta_n$ (and $b$) and hence you can use gradient descent to solve for the optimal $\beta$. For any $\beta$, let $s_n = \sum_{m=1}^N \beta_m K(\mathbf{x}_n, \mathbf{x}_m) + b$. What is $\frac{\partial F(b, \mathbf{\beta}    )}{\partial \beta_m}$?
+
+	\begin{checkboxes}
+
+		\CorrectChoice $\sum_{n=1}^N \beta_n K(\mathbf{x}_n, \mathbf{x}_m) - 2 C \sum_{n=1}^N [|y_n - s_n| \ge \epsilon] (|y_n - s_n| - \epsilon) \mbox{sign}(y_n - s_n) K(\mathbf{x}_n, \mathbf{x}_m)$
+
+		\choice $\sum_{n=1}^N \beta_n K(\mathbf{x}_n, \mathbf{x}_m) + 2 C \sum_{n=1}^N [|y_n - s_n| \ge \epsilon] (|y_n - s_n| - \epsilon) \mbox{sign}(y_n - s_n) K(\mathbf{x}_n, \mathbf{x}_m)$
+
+		\choice $\sum_{n=1}^N \beta_n K(\mathbf{x}_n, \mathbf{x}_m) - 2 C \sum_{n=1}^N [|y_n - s_n| \le \epsilon] (|y_n - s_n| - \epsilon) \mbox{sign}(y_n - s_n) K(\mathbf{x}_n, \mathbf{x}_m)$
+
+		\choice $\sum_{n=1}^N \beta_n K(\mathbf{x}_n, \mathbf{x}_m) + 2 C \sum_{n=1}^N [|y_n - s_n| \le \epsilon] (|y_n - s_n| - \epsilon) \mbox{sign}(y_n - s_n) K(\mathbf{x}_n, \mathbf{x}_m)$
+
+		\choice none of the other choices\\
+
+	\end{checkboxes}
+
+	\question Consider $T+1$ hypotheses $g_0, g_1, \cdots, g_T$. Let $g_0(\mathbf{x}) = 0$ for all $x$. Assume that your boss holds a test set $\{(\tilde{\mathbf{x}}_m, \tilde{y}_m)\}_{m=1}^M$, where you know $\tilde{\mathbf{x}}_m$ but $\tilde{\mathbf{y}}_m$ is hidden. Nevertheless, you are allowed to know the squared test error ${E_{{\rm{test}}}}({g_t}) = \frac{1}{M}\sum\limits_{m = 1}^M {({g_t}(} {\widetilde {\bf{x}}_m}) - {{\tilde y}_m}{)^2} = {e_t}$ for $t = 0, 1,2, \cdots, T$. Also, assume that $\frac{1}{M} \sum_{m=1}^M (g_t(\tilde{\mathbf{x}}_m))^2 = s_t$. Which of the following allows you to calculate $\sum_{m=1}^M g_t(\tilde{\mathbf{x}}_m) \tilde{y}_m$? Note that the calculation is the key to the test set blending technique that the NTU team has used in KDDCup2011.
+
+	\begin{checkboxes}
+		\choice $\frac{M}{2} (-e_0 - s_t + e_t)$
+		\choice $\frac{M}{2} (+e_0 - s_t + e_t)$
+		\CorrectChoice $\frac{M}{2} (+e_0 + s_t - e_t)$
+		\choice none of the other choices
+		\choice $\frac{M}{2} (-e_0 + s_t - e_t)$\\
+	\end{checkboxes}
+
+	\question Consider the case where the target function $f : [0 ,1] \to \mathbb{R}$ is given by $f(x) = x^2$ and the input probability distribution is uniform on $[0,1]$. Assume that the training set has only two examples generated independently from the input probability distribution and noiselessly by $f$, and the learning model is usual linear regression that minimizes the mean squared error within all hypotheses of the form $h(x) = w_1 x + w_0$. What is $\bar{g}(x)$, the expected value of the hypothesis that the learning algorithm produces (see Page 10 of Lecture 207)?
+
+	\begin{checkboxes}
+
+		\choice $\bar{g}(x) = 2 x - \frac{1}{2}$
+		\choice $\bar{g}(x) = 2 x + \frac{1}{2}$
+		\CorrectChoice $\bar{g}(x) = x - \frac{1}{4}$
+		\choice $\bar{g}(x) = x + \frac{1}{4}$
+		\choice none of the other choices\\
+
+	\end{checkboxes}
+
+	\question Assume that linear regression (for classification) is used within AdaBoost. That is, we need to solve the weighted-$E_{in}$ optimization problem
+	\[\mathop {\min }\limits_{\bf{w}} E_{in}^{\bf{u}}({\bf{w}}) = \frac{1}{N}\sum\limits_{n = 1}^N {{u_n}} {({y_n} - {{\bf{w}}^T}{{\bf{x}}_n})^2}.\]
+
+	\begin{checkboxes}
+		\choice none of the other choices
+		\CorrectChoice $(\sqrt{u_n} \mathbf{x}_n, \sqrt{u_n} y_n)$
+		\choice $(u_n^{-2} \mathbf{x}_n, u_n^{-2} y_n)$
+		\choice $(u_n^2 \mathbf{x}_n, u_n^2 y_n)$
+		\choice $(u_n \mathbf{x}_n, u_n y_n)$\\
+	\end{checkboxes}
+
+	\question Consider applying the AdaBoost algorithm on a binary classification data set where 99\% of the examples are positive. Because there are so many positive examples, the base algorithm within AdaBoost returns a constant classifier $g_1(\mathbf{x}) = +1$ in the first iteration. Let $u_+^{(2)}$ be the individual example weight of each positive example in the second iteration, and $u_-^{(2)}$ be the individual example weight of each negative example in the second iteration. What is $u_+^{(2)} / u_-^{(2)}$?
+
+	\begin{checkboxes}
+		\choice none of the other choices
+		\choice 1/100
+		\CorrectChoice 1/99
+		\choice 100
+		\choice 99\\
+	\end{checkboxes}
+
+	\question When talking about non-uniform voting in aggregation, we mentioned that $\alpha$ can be viewed as a weight vector learned from any linear algorithm coupled with the following transform:
+	\[\mathbf{\phi}(\mathbf{x}) = \Bigl(g_1(\mathbf{x}), g_2(\mathbf{x}), \cdots, g_T(\mathbf{x})\Bigr).\]
+	When studying kernel models, we mentioned that the kernel is simply a computational short-cut for the inner product $(\mathbf{\phi}(\mathbf{x}))^T (\mathbf{\phi}(\mathbf{x}'))$. In this problem, we mix the two topics together using the decision stumps as our $g_t(\mathbf{x})$.
+
+	Assume that the input vectors contain only integers between (including) $L$ and $R$.
+	\[{g_{s,i,\theta }}({\bf{x}}) = s \cdot {\rm{sign}}({x_i} - \theta ),{\rm{ }}\]
+	\[{\mbox{where }}i \in \{ 1,2, \cdots ,d\} ,d{\mbox{ is the finite  dimensionality of the input space}},\]
+	\[s \in \{  - 1, + 1\} ,\theta  \in \mathbb{R} ,{\mbox{ and sign}}(0) =  + 1\]
+	Two decision stumps $g$ and $\hat{g}$ are defined as the same if $g(\mathbf{x}) = \hat{g}(\mathbf{x})$ for every $\mathbf{x} \in \mathcal{X}$ Two decision stumps are different if they are not the same. Which of the followings are true?
+
+	\begin{checkboxes}
+		\choice The number of different decision stumps equals the size of $\mathcal{X}$
+		\choice $\mathcal{X}$ is of infinite size
+		\CorrectChoice There are 22 different decision stumps for the case of $d=2$, $L=1$, and $R=6$
+		\CorrectChoice $g_{+1, 1, L-1}$ is the same as $g_{-1, 3, R+1}$
+		\CorrectChoice $g_{s, i, \theta}$ is the same as $g_{s, i, \rm{ceiling}(\theta)}$, where ceiling($\theta$) is the smallest integer that is greater than or equal to $\theta$
+	\end{checkboxes}
+
+	\question Continuing from the previous question, let $\mathcal{G} = \{$ all different decision stumps for $\mathcal{X} \}$ and enumerate each hypothesis $g \in \mathcal{G}$ by some index $t$. Define
+	\[\mathbf{\phi}_{ds}(\mathbf{x}) = \Biggl(g_1(\mathbf{x}), g_2(\mathbf{x}), \cdots, g_t(\mathbf{x}), \cdots, g_{|\mathcal{G}|}(\mathbf{x})\Biggr).\]
+	Derive a simple equation that evaluates $K_{ds}(\mathbf{x}, \mathbf{x}') = (\mathbf{\phi}_{ds}(\mathbf{x}))^T (\mathbf{\phi}_{ds}(\mathbf{x}'))$ efficiently. Which of the following equation is correct? Here $\|\mathbf{v}\|_1$ denotes the one-norm of $\mathbf{v}$.
+
+	\begin{checkboxes}
+		\choice $K_{ds}(\mathbf{x}, \mathbf{x}') = 2d(R-L) - 4\|\mathbf{x}-\mathbf{x}'\|_1 - 2$
+		\choice none of the other choices
+		\CorrectChoice $K_{ds}(\mathbf{x}, \mathbf{x}') = 2d(R-L) - 4\|\mathbf{x}-\mathbf{x}'\|_1 + 2$
+		\choice $K_{ds}(\mathbf{x}, \mathbf{x}') = d(R-L) - 2\|\mathbf{x}-\mathbf{x}'\|_1 - 2$
+		\choice $K_{ds}(\mathbf{x}, \mathbf{x}') = d(R-L) - 2\|\mathbf{x}-\mathbf{x}'\|_1 + 2$\\
+	\end{checkboxes}
+
+	\question For Questions \ref{question@12}-\ref{question@18}  implement the AdaBoost-Stump algorithm as introduced in Lecture 208. Run the algorithm on the following set for training: $\href{https://d396qusza40orc.cloudfront.net/ntumltwo/hw2_data/hw2_adaboost_train.dat}{hw2\_adaboost\_train.dat}$ and the following set for testing: $\href{https://d396qusza40orc.cloudfront.net/ntumltwo/hw2_data/hw2_adaboost_test.dat}{adaboost\_test.dat}$
+
+	Use a total of $T=300$ iterations (please do not stop earlier than 300), and calculate $E_\text{in}$ and $E_\text{out}$ with the 0/1 error.
+
+	For the decision stump algorithm, please implement the following steps. Any ties can be arbitrarily broken.
+	\begin{enumerate}
+		\item For any feature $i$, sort all the $x_{n, i}$ values to $x_{[n], i}$ such that $x_{[n], i} \le x_{[n+1], i}$.
+		\item  Consider thresholds within $-\infty$ and all the midpoints $\frac{x_{[n], i} + x_{[n+1], i}}{2}$. Test those thresholds with $s \in \{-1, +1\}$ to determine the best $(s,\theta)$ combination that minimizes $E_{in}^u$ using feature $i$.
+		\item  Pick the best $(s,i,\theta)$ combination by enumerating over all possible $i$.
+
+	\end{enumerate}
+	For those interested, Step 2 can be carried out in $O(N)$ time only!!
+
+	Which of the following is true about $E_{in}(g_1)$?
+
+	\begin{checkboxes}
+		\CorrectChoice $0.2 \le E_{in}(g_1) < 0.3$
+		\choice $E_{in}(g_1) > 0.3$
+		\choice $E_{in}(g_1) = 0$
+		\choice 0
+		\choice $0.1 \le E_{in}(g_1) < 0.2$\\
+	\end{checkboxes}
+
+	\question Which of the following is true about $E_{in}(G)$?
+
+	\begin{checkboxes}
+		\choice $0.1 \le E_{in}(G) < 0.2$
+		\choice $0.2 \le E_{in}(G) < 0.3$
+		\choice $E_{in}(G) > 0.3$
+		\choice $0 < E_{in}(G) < 0.1$
+		\CorrectChoice $E_{in}(G) = 0$\\
+	\end{checkboxes}
+
+	\question Let $U_t = \sum_{n=1}^N u_n^{(t)}$. Which of the following is true about $U_2$? (note that $U_1=1$)
+
+	\begin{checkboxes}
+		\choice $U_2 = 0$
+		\choice $0 < U_2 < 0.1$
+		\choice $0.1 \le U_2 < 0.2$
+		\choice $0.2 \le U_2 < 0.3$
+		\CorrectChoice $U_2 > 0.3$\\
+	\end{checkboxes}
+
+	\question Which of the following is true about $U_T$?
+
+	\begin{checkboxes}
+		\choice $U_T = 0$
+		\CorrectChoice $0 < U_T < 0.1$
+		\choice $0.1 \le U_T < 0.2$
+		\choice $0.2 \le U_T < 0.3$
+		\choice $U_T > 0.3$\\
+	\end{checkboxes}
+
+	\question Which is the following is true about the minimum value of $\epsilon_t$ within $t = 1, 2, \cdots, 300$?
+
+	\begin{checkboxes}
+		\choice $0 < \mbox{value} < 0.1$
+		\choice $\mbox{value} > 0.3$
+		\choice $\mbox{value} = 0$
+		\CorrectChoice $\mbox{value} = 0$
+		\choice $0.2 \le \mbox{value} < 0.3$  \\
+	\end{checkboxes}
+
+	\question Calculate $E_{out}$ with the test set. Which of the following is true about $E_{out}(g_1)$?
+
+	\begin{checkboxes}
+		\CorrectChoice $0.2 \le E_{out}(g_1) < 0.3$
+		\choice $E_{out}(g_1) > 0.3$
+		\choice $0 < E_{out}(g_1) < 0.1$
+		\choice $0.1 \le E_{out}(g_1) < 0.2$
+		\choice $E_{out}(g_1) = 0$\\
+	\end{checkboxes}
+
+	\question Which of the following is true about $E_{out}(G)$?\label{q18}
+
+	\begin{checkboxes}
+		\CorrectChoice $0.1 \le E_{out}(G) < 0.2$
+		\choice  $0 < E_{out}(G) < 0.1$
+		\choice $E_{out}(G) = 0$
+		\choice $E_{out}(G) > 0.3$
+		\choice $0.2 \le E_{out}(G) < 0.3$
+	\end{checkboxes}
+
+	\question Write a program to implement the kernel ridge regression algorithm from Lecture 206, and use it for classification (i.e. implement LSSVM). Consider the following data set $\href{https://d396qusza40orc.cloudfront.net/ntumltwo/hw2_data/hw2_lssvm_all.dat}{hw2\_lssvm\_all.dat}$ . Use the first 400 examples for training and the remaining for testing. Calculate $E_{in}$ and $E_{out}$ with the 0/1 error.
+	Consider the Gaussian-RBF kernel $\exp\left(-\gamma \|\mathbf{x} - \mathbf{x}'\|^2\right)$ Try all combinations of parameters $\gamma \in \{ 32, 2, 0.125\}$ and $\lambda \in \{ 0.001, 1, 1000\}$.\\
+	Among all parameter combinations, which of the following is the range that the minimum $E_{in}(g)$ resides in?
+
+	\begin{checkboxes}
+		\choice [0.8,1.0)
+		\CorrectChoice [0,0.2)
+		\choice [0.4,0.6)
+		\choice [0.2,0.4)
+		\choice [0.6,0.8)\\
+	\end{checkboxes}
+
+	\question Following Question 19, among all parameter combinations, which of the following is the range that the minimum $E_{out}(g)$ resides in?
+
+	\begin{checkboxes}
+		\CorrectChoice [0.2,0.4)
+		\choice [0.8,1.0)
+		\choice [0.4,0.6)
+		\choice [0.6,0.8)
+		\choice [0,0.2)
+	\end{checkboxes}
+
+
+
+\end{questions}
+
+
+\end{document}
